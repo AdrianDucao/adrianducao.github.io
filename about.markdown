@@ -7,7 +7,6 @@ permalink: /about/
 Hi, I'm Adrian Ducao aka Ian, I'm an undergrad BSIT who loves programming and discovering things. I'm currently employed to a Corporate Job, I still accept freelance projects and jump from being a Freelance Programmer, Full Stack Web Developer, Web App Developer, and being a Consultant from time to time, depending on what kind of freelance projects that I receive. I do support Open Source Projects however due to signed NDA (Non-Disclosure Agreement) there are repository that I needed to set on Private to protect my clients source code.
 
 ## Languages I use and knowledgable on
-:heavy_check_mark:
 * C/C++
 * Python
 * PHP
@@ -17,15 +16,18 @@ Hi, I'm Adrian Ducao aka Ian, I'm an undergrad BSIT who loves programming and di
 * Ruby *(minimal)*
 * HTML/HTML5
 * CSS
-* JavaScript *(rusty haven't used in years)*
+* JavaScript
 * Bash
 * GDScript *(minimal)*
+* React.js
 
 ## Framework I use
 * Django
 * Bootstrap
-* Node.js *(rarely used)*
+* Node.js
 * Laravel *(rarely used)*
+* Android Studio
+* ReactNative
 
 *and the rest are core*
 
