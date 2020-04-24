@@ -3,8 +3,13 @@ layout: page
 title: About
 permalink: /about/
 ---
-## Who?
+## Who am I?
 Hi, I'm Adrian Ducao aka Ian, I'm an undergrad BSIT who loves programming and discovering things. I'm currently employed to a Corporate Job, I still accept freelance projects and jump from being a Freelance Programmer, Full Stack Web Developer, Web App Developer, and being a Consultant from time to time, depending on what kind of freelance projects that I receive. I do support Open Source Projects however due to signed NDA (Non-Disclosure Agreement) there are repository that I needed to set on Private to protect my clients source code.
+
+## Work 
+* Part time Ethical Hacker at Seccore1
+* Full time EXL Service Executive
+* Freelance Programmer, Full Stack Web Developer, Full Stack Web App Developer, Back end Mobile App Developer
 
 ## Languages I use and knowledgable on
 * C/C++
