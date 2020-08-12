@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-24T16:07:09+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Adrian Ducao</title><subtitle>An Open Source Blog</subtitle><entry><title type="html">Welcome to adrianducao.github.io</title><link href="http://localhost:4000/jekyll/update/2020/04/06/welcome-to-adrianducao.github.io.html" rel="alternate" type="text/html" title="Welcome to adrianducao.github.io" /><published>2020-04-06T12:47:36+08:00</published><updated>2020-04-06T12:47:36+08:00</updated><id>http://localhost:4000/jekyll/update/2020/04/06/welcome-to-adrianducao.github.io</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/04/06/welcome-to-adrianducao.github.io.html">&lt;p&gt;This static website will mainly show my daily or weekly blog post about Programming, Web App Development, Security and other stuff while learning things.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-12T12:59:08+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Adrian Ducao</title><subtitle>An Open Source Blog</subtitle><entry><title type="html">The year i love and hate</title><link href="http://localhost:4000/blog/2020/08/12/The-year-i-love-and-hate.html" rel="alternate" type="text/html" title="The year i love and hate" /><published>2020-08-12T12:15:00+08:00</published><updated>2020-08-12T12:15:00+08:00</updated><id>http://localhost:4000/blog/2020/08/12/The-year-i-love-and-hate</id><content type="html" xml:base="http://localhost:4000/blog/2020/08/12/The-year-i-love-and-hate.html">&lt;h3 id=&quot;pandemic-shtf&quot;&gt;Pandemic SHTF&lt;/h3&gt;
+
+&lt;p&gt;The year the Pandemic SHTF, limited access, limited movement, and limited productive things to do. It all started just with subtle cases, deaths, and recoveries on the month January and it went nuts by the month of March, But this situation at hand there’s a noticable growth on creativity and financial awareness of masses, maybe they realized that they haven’t prepare for this sort of thing or have the capacity to deal with the unemployment and restriction nonetheless i did notice the urge of people to get rid with the boredom of being confined in their own houses, social media and other ways of entertainment are one of many choices we have to get rid of this feeling of boredom. I however want to explore things that i’ve missed for couple of years, since i started working i haven’t had enough time to learn and ponder on the things i like the most which are programming, web development, and business.&lt;/p&gt;
+
+&lt;h3 id=&quot;perspective&quot;&gt;Perspective&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;March 16, 2020&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I was at the office when the lockdown procedure began in Metro Manila, most of our collegues has a transportation readily available prepared by our company, however they didn’t account that they have employees that lives on the northern area of Metro Manila, most buses we see that day have a Southern Metro Manila Signs and nothing, not 1 transporation vehicle is available for us coming from the nothern metro. Nevertheless i wanted to go home after a long day of work i have to take a rest, but there’s no public transporation avaible since the lockdown procedure prohibits the operation of public transportation vehicles, Inn order for me to go home, I’m forced to take the hardway and walked from Buendia Makati to Sampaloc Manila that’s at least 10km or 7.21 miles distance, luckily the heat of the sun isn’t that harsh at that time.&lt;/p&gt;
+
+&lt;h3 id=&quot;boredom-strikes&quot;&gt;Boredom Strikes&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;March 23, 2020&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I began to look for a fun way to kill time, I started searching for 2D Game Development and i did just that here’s the link &lt;a href=&quot;https://github.com/AdrianDucao/Game-Dev-Practice&quot;&gt;Game-Dev-Practice&lt;/a&gt;. But most of the i just binge watch youtube and watch movies on my Plex Server.&lt;/p&gt;
+
+&lt;h3 id=&quot;thinkering&quot;&gt;Thinkering&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;March 28, 2020&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I started to create a game and a subpar story for it here’s the link of unfinished game dev &lt;a href=&quot;https://github.com/AdrianDucao/Explorer19&quot;&gt;Explorer19&lt;/a&gt;, i always have this facination of end of the world scenarios, when i was a kid, i love to draw war scenarios with stick figures and i love playing games like Left 4 Dead when i was in elementary, i don’t know about this but i think this quote is true;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;“Everyone, deep in their hearts, is waiting for the end of the world to come.” — Haruki Murakami&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;refresher&quot;&gt;Refresher&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;April 10, 2020&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;april-23-2020&quot;&gt;April 23, 2020&lt;/h3&gt;
+&lt;h3 id=&quot;april-29-2020&quot;&gt;April 29, 2020&lt;/h3&gt;
+&lt;h3 id=&quot;may-4-2020&quot;&gt;May 4, 2020&lt;/h3&gt;
+&lt;h3 id=&quot;may-10-2020&quot;&gt;May 10, 2020&lt;/h3&gt;</content><author><name></name></author><category term="blog" /><summary type="html">Pandemic SHTF</summary></entry><entry><title type="html">Welcome to adrianducao.github.io</title><link href="http://localhost:4000/jekyll/update/2020/04/06/welcome-to-adrianducao.github.io.html" rel="alternate" type="text/html" title="Welcome to adrianducao.github.io" /><published>2020-04-06T12:47:36+08:00</published><updated>2020-04-06T12:47:36+08:00</updated><id>http://localhost:4000/jekyll/update/2020/04/06/welcome-to-adrianducao.github.io</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/04/06/welcome-to-adrianducao.github.io.html">&lt;p&gt;This static website will mainly show my daily or weekly blog post about Programming, Web App Development, Security and other stuff while learning things.&lt;/p&gt;
 
 &lt;!-- 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -12,4 +48,4 @@
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/ --&gt;</content><author><name></name></author><summary type="html">This static website will mainly show my daily or weekly blog post about Programming, Web App Development, Security and other stuff while learning things.</summary></entry></feed>
+[jekyll-talk]: https://talk.jekyllrb.com/ --&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">This static website will mainly show my daily or weekly blog post about Programming, Web App Development, Security and other stuff while learning things.</summary></entry></feed>

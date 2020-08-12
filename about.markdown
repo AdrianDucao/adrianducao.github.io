@@ -37,9 +37,9 @@ Hi, I'm Adrian Ducao aka Ian, I'm an undergrad BSIT who loves programming and di
 *and the rest are core*
 
 ## DBMS I use
-* MySQL *(mostly used)*
+* MySQL
 * SQLite *(sometimes)*
-* MongoDB *(learning)*
+* MongoDB 
 * custom DBMS written in C *(rarely used)*
 
 ## Microservices
@@ -47,9 +47,10 @@ Hi, I'm Adrian Ducao aka Ian, I'm an undergrad BSIT who loves programming and di
 
 ## Hosting and DNS
 * [GoDaddy](https://ph.godaddy.com/)
+* [DigitalOcean](https://www.digitalocean.com/)
 * [AWS](https://aws.amazon.com)
 * my own server
 
-You can find out more Ian's Open Source Project at [Github](https://github.com/AdrianDucao/)
+You can find out more Ian's Open Source Project at [Github](https://github.com/AdrianDucao/) and My Business [RPOINTITSOLUTIONS](https:rpointsolution.com) 
 
 *Most repository are set on private to protect NDA of clients.*
