@@ -19,7 +19,7 @@ Hi, I'm Adrian Ducao aka Ian, I'm an undergrad BSIT who loves programming, learn
 
 ## Languages I use and familiar with
 * C/C++ (rusty)
-* Python
+* Python [Certificate](https://www.hackerrank.com/certificates/585f65ec6da2)
 * PHP
 * Java *(rusty)*
 * Assembly *(minimal and rusty)*

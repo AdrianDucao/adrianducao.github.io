@@ -1,3 +1,0 @@
-I"Å<h3 id="ransomware-concept">Ransomware Concept</h3>
-<p>The basic of ransomware is it encrypts a specified target file extension using with a key that the attacker had setup on a server somewhere to be used later for later decyption process. There are different programming languges you can use for this but the easiest and fastest way to provide a proof of concept is with python.</p>
-:ET
