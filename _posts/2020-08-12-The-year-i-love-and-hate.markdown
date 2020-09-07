@@ -30,8 +30,15 @@ I started to create a game and a subpar story for it here's the link of unfinish
 ###  Refresher
 >April 10, 2020
  
-### April 23, 2020
-### April 29, 2020
-### May 4, 2020
-### May 10, 2020
+### 
+>April 23, 2020
+### 
+>April 29, 2020
+### 
+>May 4, 2020
+### 
 >May 10, 2020
+### A new journey had began
+>June 01, 2020
+
+This is the day i've decided with my best of friends to register a business for our new venture, [RPOINT IT SOLUTIONS](https://rpointsolution.com), since it's the height of pandemic we can only do and move so much so there's that we'll have to work it out until the end of 2021.
