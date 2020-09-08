@@ -18,43 +18,58 @@ Hi, I'm Adrian Ducao aka Ian, I'm an undergrad BSIT who loves programming, learn
 * Freelance Web Developer in High School and College
 
 ## Languages I use and familiar with
-* C/C++ (rusty)
+>as of September 8, 2020
+### Actively used
 * Python [Certificate](https://www.hackerrank.com/certificates/585f65ec6da2)
-* PHP
-* Java *(rusty)*
-* Assembly *(minimal and rusty)*
-* SQL
+* JavaScript
 * JSON
-* Ruby *(minimal)*
+* C
 * HTML/HTML5
 * CSS
-* JavaScript
 * Bash
-* GDScript *(minimal)*
-* React.js
-* Visual Basic 6 (forgotten)
-* C# (amnesia)
 
-### Framework
+### Rarely used
+* PHP
+* Java
+* SQL
+* Ruby 
+* C++
+* GDScript
+
+### Familiar (needs to relearn)
+* C#
+* Assembly
+* Visual Basic 6
+
+## Framework, Library, and runtime I use
+### Actively used
 * Django
-* Bootstrap
 * Node.js
-* Laravel *(rarely)*
+* React.js
+* Bootstrap
+
+### Rarely used
+* Laravel 
 * Android Studio
 * ReactNative
 
-*and the rest are written in core*
+### Relearning
+* ASP.net
 
-### Database
-* MySQL
-* SQLite *(sometimes)*
+
+## Database I use
+### Actively used
 * MongoDB 
+
+### Rarely used
+* MySQL
+* SQLite
 * custom DBMS written in C [database.c](https://github.com/AdrianDucao/C-Language/blob/master/database.c) *(rarely)*
 
-### Containerization
+## Containerization 
 * Docker *(some projects that requires it)*
 
-### Hosting and DNS
+## Hosting and DNS
 * [GoDaddy](https://ph.godaddy.com/)
 * [DigitalOcean](https://www.digitalocean.com/)
 * [AWS](https://aws.amazon.com)
