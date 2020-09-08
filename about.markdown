@@ -18,7 +18,8 @@ Hi, I'm Adrian Ducao aka Ian, I'm an undergrad BSIT who loves programming, learn
 * Freelance Web Developer in High School and College
 
 ## Languages I use and familiar with
->as of September 8, 2020
+as of September 8, 2020
+
 ### Actively used
 * Python [Certificate](https://www.hackerrank.com/certificates/585f65ec6da2)
 * JavaScript
