@@ -29,7 +29,7 @@ Hi, I'm Adrian Ducao aka Ian, I'm an undergrad BSIT who loves programming, learn
 * CSS
 * Bash
 
-##### Rarely used
+#### Rarely used
 * PHP
 * Java
 * SQL
@@ -37,7 +37,7 @@ Hi, I'm Adrian Ducao aka Ian, I'm an undergrad BSIT who loves programming, learn
 * C++
 * GDScript
 
-##### Familiar (needs to relearn)
+#### Familiar (needs to relearn)
 * C#
 * Assembly
 * Visual Basic 6
@@ -45,28 +45,28 @@ Hi, I'm Adrian Ducao aka Ian, I'm an undergrad BSIT who loves programming, learn
 ## Framework, Library, and runtime I use
 >as of September 8, 2020
 
-##### Actively used
+#### Actively used
 * Django
 * Node.js
 * React.js
 * Bootstrap
 
-##### Rarely used
+#### Rarely used
 * Laravel 
 * Android Studio
 * ReactNative
 
-##### Relearning
+#### Relearning
 * ASP.net
 
 
 ## Database I use
 >as of September 8, 2020
 
-##### Actively used
+#### Actively used
 * MongoDB 
 
-##### Rarely used
+#### Rarely used
 * MySQL
 * SQLite
 * custom DBMS written in C [database.c](https://github.com/AdrianDucao/C-Language/blob/master/database.c) *(rarely)*
