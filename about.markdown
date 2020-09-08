@@ -6,11 +6,11 @@ permalink: /about/
 ## Who am I?
 Hi, I'm Adrian Ducao aka Ian, I'm an undergrad BSIT who loves programming, learning and discovering things. I'm currently employed to a Corporate Job, I still accept freelance projects and jump from being a Freelance Programmer, Full Stack Web Developer, Web App Developer, and being a Consultant from time to time, depending on what kind of freelance projects that I receive. I do support Open Source Projects however due to signed NDA (Non-Disclosure Agreement) and toxic nature of Open Source, there are repositories set to Private to protect my clients source code and confidencial algorithm.
 
-### Current Work 
+## Current Work 
 * Business Owner at [RPOINT IT SOLUTIONS](https://rpointsolution.com)
 * Full time at EXL Service
 
-### Past Experience
+## Past Experience
 * Part time Ethical Hacker at Seccore1
 * Freelance Software Developer/Consultant at Philippine National Police, Intelligence Group, Counter Intelligence Division (PNP-IG CID), located at Camp BGenenal Rafael T Crame, Quezon City. [Certifcate Here](https://www.instagram.com/p/B0dNpdalTxw/)
 * Freelance Full Stack Developer at X3M Trading located at Neuva Vizcaya, Philippines
@@ -20,7 +20,7 @@ Hi, I'm Adrian Ducao aka Ian, I'm an undergrad BSIT who loves programming, learn
 ## Languages I use and familiar with
 as of September 8, 2020
 
-### Actively used
+##### Actively used
 * Python [Certificate](https://www.hackerrank.com/certificates/585f65ec6da2)
 * JavaScript
 * JSON
@@ -29,7 +29,7 @@ as of September 8, 2020
 * CSS
 * Bash
 
-### Rarely used
+###### Rarely used
 * PHP
 * Java
 * SQL
@@ -37,32 +37,32 @@ as of September 8, 2020
 * C++
 * GDScript
 
-### Familiar (needs to relearn)
+###### Familiar (needs to relearn)
 * C#
 * Assembly
 * Visual Basic 6
 
 ## Framework, Library, and runtime I use
-### Actively used
+###### Actively used
 * Django
 * Node.js
 * React.js
 * Bootstrap
 
-### Rarely used
+###### Rarely used
 * Laravel 
 * Android Studio
 * ReactNative
 
-### Relearning
+###### Relearning
 * ASP.net
 
 
 ## Database I use
-### Actively used
+###### Actively used
 * MongoDB 
 
-### Rarely used
+###### Rarely used
 * MySQL
 * SQLite
 * custom DBMS written in C [database.c](https://github.com/AdrianDucao/C-Language/blob/master/database.c) *(rarely)*
