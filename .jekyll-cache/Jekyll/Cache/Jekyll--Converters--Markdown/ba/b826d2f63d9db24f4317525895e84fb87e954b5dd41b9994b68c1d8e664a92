@@ -32,7 +32,7 @@
   <li>Bash</li>
 </ul>
 
-<h5 id="rarely-used">Rarely used</h5>
+<h4 id="rarely-used">Rarely used</h4>
 <ul>
   <li>PHP</li>
   <li>Java</li>
@@ -42,7 +42,7 @@
   <li>GDScript</li>
 </ul>
 
-<h5 id="familiar-needs-to-relearn">Familiar (needs to relearn)</h5>
+<h4 id="familiar-needs-to-relearn">Familiar (needs to relearn)</h4>
 <ul>
   <li>C#</li>
   <li>Assembly</li>
@@ -54,7 +54,7 @@
   <p>as of September 8, 2020</p>
 </blockquote>
 
-<h5 id="actively-used-1">Actively used</h5>
+<h4 id="actively-used-1">Actively used</h4>
 <ul>
   <li>Django</li>
   <li>Node.js</li>
@@ -62,14 +62,14 @@
   <li>Bootstrap</li>
 </ul>
 
-<h5 id="rarely-used-1">Rarely used</h5>
+<h4 id="rarely-used-1">Rarely used</h4>
 <ul>
   <li>Laravel</li>
   <li>Android Studio</li>
   <li>ReactNative</li>
 </ul>
 
-<h5 id="relearning">Relearning</h5>
+<h4 id="relearning">Relearning</h4>
 <ul>
   <li>ASP.net</li>
 </ul>
@@ -79,12 +79,12 @@
   <p>as of September 8, 2020</p>
 </blockquote>
 
-<h5 id="actively-used-2">Actively used</h5>
+<h4 id="actively-used-2">Actively used</h4>
 <ul>
   <li>MongoDB</li>
 </ul>
 
-<h5 id="rarely-used-2">Rarely used</h5>
+<h4 id="rarely-used-2">Rarely used</h4>
 <ul>
   <li>MySQL</li>
   <li>SQLite</li>

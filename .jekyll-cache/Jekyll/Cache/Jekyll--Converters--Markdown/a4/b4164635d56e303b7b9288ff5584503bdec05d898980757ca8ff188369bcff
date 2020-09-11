@@ -1,0 +1,13 @@
+I"�<h3 id="issue">Issue:</h3>
+<p>I can’t use normal javascript windows.sessionStorage or localStorage in nodejs.</p>
+
+<h3 id="solution">Solution:</h3>
+<p>I create an npm package since i couldn’t find a solution.</p>
+
+<h3 id="resources">Resources:</h3>
+<p><a href="https://github.com/AdrianDucao/sessionStorage-for-node">Github Repo</a></p>
+
+<p><a href="https://www.npmjs.com/package/sessionstorage-for-nodejs">NPM Package</a></p>
+
+<p>Happy Coding.</p>
+:ET
