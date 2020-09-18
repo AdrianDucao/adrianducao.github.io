@@ -1,4 +1,6 @@
-I"Ú<h1 id="goatse">goatse</h1>
+I"˜<p><img style="width: inherit;" src="http://hits.dwyl.com/dev-yakuza.github.io.svg" alt="hit count image" /></p>
+
+<h1 id="goatse">goatse</h1>
 <p>a proof of concept backdoor for the most bare-bone access</p>
 
 <h2 id="usage">Usage</h2>
@@ -16,10 +18,6 @@
   </li>
   <li>create an exe file using pyinstaller, exe file is located in dist folder
     <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ pyinstaller --onefile goatse.py
-</code></pre></div>    </div>
-  </li>
-  <li>PDF Embedding Attacks
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ Due diligence my friend.
 </code></pre></div>    </div>
   </li>
 </ol>

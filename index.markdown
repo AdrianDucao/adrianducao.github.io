@@ -4,3 +4,4 @@
 
 layout: home
 ---
+<img style="width: inherit;" src="http://hits.dwyl.com/dev-yakuza.github.io{{ https://adrianducao.github.io }}.svg" alt="hit count image"/>

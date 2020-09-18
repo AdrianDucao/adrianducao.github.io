@@ -4,6 +4,8 @@ title:  "Proof of Concept Python Backdoor"
 date:   2020-09-11 6:00:00 +0800
 categories: coding
 ---
+<img style="width: inherit;" src="http://hits.dwyl.com/dev-yakuza.github.io{{ https://adrianducao.github.io/coding/2020/09/10/Proof-of-Concept-Python-Backdoor.html }}.svg" alt="hit count image"/>
+
 # goatse
 a proof of concept backdoor for the most bare-bone access
 

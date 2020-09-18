@@ -3,6 +3,8 @@ layout: page
 title: About
 permalink: /about/
 ---
+<img style="width: inherit;" src="http://hits.dwyl.com/dev-yakuza.github.io{{ https://adrianducao.github.io/about }}.svg" alt="hit count image"/>
+
 ## Who am I?
 Hi, I'm Adrian Ducao aka Ian, I'm an undergrad BSIT who loves programming, learning and discovering things. I'm currently employed to a Corporate Job, I still accept freelance projects and jump from being a Freelance Programmer, Full Stack Web Developer, Web App Developer, and being a Consultant from time to time, depending on what kind of freelance projects that I receive. I do support Open Source Projects however due to signed NDA (Non-Disclosure Agreement) and toxic nature of Open Source, there are repositories set to Private to protect my clients source code and confidencial algorithm.
 

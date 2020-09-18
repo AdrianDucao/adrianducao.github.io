@@ -1,0 +1,18 @@
+I"E<p><img src="https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fadrianducao.github.io%2Fjekyll%2Fupdate%2F2020%2F04%2F06%2Fwelcome-to-adrianducao.github.io.html" alt="Hits" /></p>
+
+<p>This static website will mainly show my daily or weekly blog post about Programming, Web App Development, Security and other stuff while learning things.</p>
+
+<!-- 
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+ -->
+
+<!-- Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/ -->
+:ET

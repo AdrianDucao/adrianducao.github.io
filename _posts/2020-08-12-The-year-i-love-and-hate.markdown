@@ -4,6 +4,8 @@ title:  "The year i love and hate"
 date:   2020-08-12 12:15:00 +0800
 categories: blog
 ---
+<img style="width: inherit;" src="http://hits.dwyl.com/dev-yakuza.github.io{{ https://adrianducao.github.io/blog/2020/08/12/The-year-i-love-and-hate.html }}.svg" alt="hit count image"/>
+
 ### Pandemic SHTF
 
 The year the Pandemic SHTF, limited access, limited movement, and limited productive things to do. It all started just with subtle cases, deaths, and recoveries on the month January and it went nuts by the month of March, But this situation at hand there's a noticable growth on creativity and financial awareness of masses, maybe they realized that they haven't prepare for this sort of thing or have the capacity to deal with the unemployment and restriction nonetheless i did notice the urge of people to get rid with the boredom of being confined in their own houses, social media and other ways of entertainment are one of many choices we have to get rid of this feeling of boredom. I however want to explore things that i've missed for couple of years, since i started working i haven't had enough time to learn and ponder on the things i like the most which are programming, web development, and business.
