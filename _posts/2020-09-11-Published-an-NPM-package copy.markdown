@@ -4,7 +4,6 @@ title:  "Published an NPM Package"
 date:   2020-09-11 6:00:00 +0800
 categories: coding
 ---
-<img style="width: inherit;" src="http://hits.dwyl.com/dev-yakuza.github.io{{ https://adrianducao.github.io/coding/2020/09/10/Published-an-NPM-package-copy.html }}.svg" alt="hit count image"/>
 
 ### Issue:
 I've been trying to figure out on how to use sessionStorage in node.js, it's true that you should not use these on projects but there are some useful use case of these, so i decided to create one and published it as npm package for others to use if they need it.

@@ -4,7 +4,6 @@ title:  "Ransomware Proof of concept"
 date:   2020-08-29 6:00:00 +0800
 categories: coding
 ---
-<img style="width: inherit;" src="http://hits.dwyl.com/dev-yakuza.github.io{{ https://adrianducao.github.io/coding/2020/08/28/proof-of-concept-ransomware.html }}.svg" alt="hit count image"/>
 
 ### Ransomware Concept
 The basic of ransomware is it encrypts a specified target file extension using with a key that the attacker had setup on a server somewhere to be used later for later decyption process. There are different programming languges you can use for this but the easiest and fastest way to provide a proof of concept is with python. You can check my code repo here [run-some-crypt](https://github.com/AdrianDucao/run-some-crypt).

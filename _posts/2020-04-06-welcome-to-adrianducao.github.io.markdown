@@ -5,8 +5,6 @@ date:   2020-04-06 12:47:36 +0800
 categories: jekyll update
 ---
 
-<img style="width: inherit;" src="http://hits.dwyl.com/dev-yakuza.github.io{{ https://adrianducao.github.io/jekyll/update/2020/04/06/welcome-to-adrianducao.github.io.html }}.svg" alt="hit count image"/>
-
 This static website will mainly show my daily or weekly blog post about Programming, Web App Development, Security and other stuff while learning things.
 
 <!-- {% highlight ruby %}

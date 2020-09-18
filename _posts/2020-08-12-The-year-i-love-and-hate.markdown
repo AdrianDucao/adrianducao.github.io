@@ -4,7 +4,6 @@ title:  "The year i love and hate"
 date:   2020-08-12 12:15:00 +0800
 categories: blog
 ---
-<img style="width: inherit;" src="http://hits.dwyl.com/dev-yakuza.github.io{{ https://adrianducao.github.io/blog/2020/08/12/The-year-i-love-and-hate.html }}.svg" alt="hit count image"/>
 
 ### Pandemic SHTF
 
