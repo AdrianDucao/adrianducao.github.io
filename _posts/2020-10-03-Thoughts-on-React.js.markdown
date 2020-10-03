@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Thoughts on React.js"
-date:   2020-09-11 6:00:00 +0800
+date:   2020-10-03 6:00:00 +0800
 categories: coding
 ---
 
