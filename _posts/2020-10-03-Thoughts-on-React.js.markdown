@@ -26,4 +26,7 @@ The only Cons to these web framworks are the hyped up nature of it and the fact 
 # Conclusion
 Learning curve is a minor setback, you are living in 21st Century different information, tutorials, documentations and overall human knowledge is available on the internet, anything can be learned. React.js is a pretty good front-end framework, in order to complete a full stack project you have to use a different framework and runtime to finish the back-end you can use Node.js and Express.js web framework for your REST API, even better if you add GraphQL on the mix. This industry is changing month by month and it's up to you to catch up and learn.
 
+[Sample Code](https://github.com/AdrianDucao/devlog)
+[Dev Vlog](https://www.youtube.com/c/AMACTechtipsPhilippines/videos?view_as=subscriber)
+
 Happy Coding.
