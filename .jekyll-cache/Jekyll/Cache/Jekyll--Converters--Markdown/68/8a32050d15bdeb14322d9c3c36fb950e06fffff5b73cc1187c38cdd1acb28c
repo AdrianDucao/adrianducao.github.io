@@ -1,0 +1,39 @@
+I"�<h1 id="what-is-it">What is it?</h1>
+<p>finding-PORTy is a proof of concept fully functional port scanning tool designed to check open ports, check live host in a network, stealth scans, and keep activity data for later use.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    |<span class="se">\ </span>   o
+    |  <span class="se">\ </span>   o
+|<span class="se">\ </span>/    .<span class="se">\ </span>o
+| |       <span class="o">(</span> <span class="o">======[</span>finding-PORTy v1.]<span class="o">======</span>
+|/ <span class="se">\ </span>    /
+    |  /
+     |/
+                    
+
+
+<span class="o">===[</span>OPTIONS]<span class="o">===</span> 
+ <span class="o">[</span>1] Scan Open Ports 
+ <span class="o">[</span>2] Ping Sweep Live Host <span class="o">(</span>Loud<span class="o">)</span> 
+ <span class="o">[</span>3] TCP Scan <span class="o">(</span>Stealth<span class="o">)</span> 
+ <span class="o">[</span>4] Show Activities 
+ <span class="o">[</span>5] Remove History
+ <span class="o">[</span>0] Exit
+Action: 
+</code></pre></div></div>
+
+<h1 id="the-point">The Point</h1>
+<p>Most developers will tell you that React.js offers reusable components, however with stock HTML5, CSS3, and JavaScript you can also create a reusable components. The thing is you’re still designing some of that components with CSS, probably the point is to save time, you can argue that you can write all those by your self but if you are in a deadline, it’s better to shave minutes or hours to meet that said deadline.</p>
+
+<p>Performance, is one of the main reason developers use React, so how does it work? the way stock HTML, CSS, and JavaScript work goes something like this; you enter the website, the html, css and js stack loads, and if you go a different pages that said stack will reload everytime you go to different pages of that site. React.js works like this, you enter the site, the static file such as HTML, CSS, and JS is downloaded at once if not incrementally being downloaded to your browser, and whenever you go to a different page the only thing being refreshed or re-rendered is the content or the API. that’s why React.js is a client side application.</p>
+
+<h1 id="cons">Cons</h1>
+<p>The only Cons to these web framworks are the hyped up nature of it and the fact of FOMO(Fear Of Missing Out) this pushes developers to learn new framework because it is hot and hyped up, and may lead developers to Burn Out.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+<p>Learning curve is a minor setback, you are living in 21st Century different information, tutorials, documentations and overall human knowledge is available on the internet, anything can be learned. React.js is a pretty good front-end framework, in order to complete a full stack project you have to use a different framework and runtime to finish the back-end you can use Node.js and Express.js web framework for your REST API, even better if you add GraphQL on the mix. This industry is changing month by month and it’s up to you to catch up and learn.</p>
+
+<p><a href="https://github.com/AdrianDucao/devlog">Sample Code</a>
+<a href="https://www.youtube.com/c/AMACTechtipsPhilippines/videos?view_as=subscriber">Dev Vlog</a></p>
+
+<p>Happy Coding.</p>
+:ET

