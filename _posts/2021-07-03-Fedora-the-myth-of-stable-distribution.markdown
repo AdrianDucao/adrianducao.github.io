@@ -6,7 +6,7 @@ categories: blog
 ---
 
 # Stability Fedora Distro
-Fedora OS is one of many distribution of linux kernel by far this is the most stable OS i've used, in Ubuntu this typically breaks after 3-4 months of usage and updates, Pop_OS actually lasted 6-7 months before breaking, but Fedora lasted me almost 2 years before breaking on me still usable with cli but had to install a fresh copy of Fedora 34.
+Fedora OS is one of many distribution of linux kernel by far this is the most stable OS i've used, in Ubuntu this typically breaks after 3-4 months of usage and updates, Pop_OS actually lasted 6-7 months before breaking, but Fedora lasted me almost 2 years before breaking on me, the reason why fedora is stable is due to the huge support of developers who maintain the kernel and is backed by redhat which you'll get a steady updates is providing bleeding edge technology and since Fedora has one of the largest community most if not all issues has been addressed, reported, or experienced everysingle kind of breaks to be able to provide solutions, and since Fedora is following the spirit of software freedom and open source philosophy which makes them actively refuse to include proprietary programs and would rather prefer open sourced software instead.
 
 # Issue and Troubleshooting
 The issue that i encounter the most when in comes with linux distro is the kernel update there are times that things might truly break reason may vary, there's alot of variable to consider such as hardware compatibility, broken dependency repositories, and other unknown sh*ts.
