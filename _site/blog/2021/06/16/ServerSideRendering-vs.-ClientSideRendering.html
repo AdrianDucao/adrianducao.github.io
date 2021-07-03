@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Server Side Rendering vs. Client Side Rendering | Adrian Ducao</title>
+<meta name="generator" content="Jekyll v4.0.1" />
+<meta property="og:title" content="Server Side Rendering vs. Client Side Rendering" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Updated 06/17/2021" />
+<meta property="og:description" content="Updated 06/17/2021" />
+<link rel="canonical" href="http://localhost:4000/blog/2021/06/16/ServerSideRendering-vs.-ClientSideRendering.html" />
+<meta property="og:url" content="http://localhost:4000/blog/2021/06/16/ServerSideRendering-vs.-ClientSideRendering.html" />
+<meta property="og:site_name" content="Adrian Ducao" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-06-16T06:00:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Server Side Rendering vs. Client Side Rendering" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/blog/2021/06/16/ServerSideRendering-vs.-ClientSideRendering.html","headline":"Server Side Rendering vs. Client Side Rendering","dateModified":"2021-06-16T06:00:00+08:00","datePublished":"2021-06-16T06:00:00+08:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2021/06/16/ServerSideRendering-vs.-ClientSideRendering.html"},"description":"Updated 06/17/2021","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Adrian Ducao" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Adrian Ducao</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Server Side Rendering vs. Client Side Rendering</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2021-06-16T06:00:00+08:00" itemprop="datePublished">Jun 16, 2021
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <blockquote>
+  <p>Updated 06/17/2021</p>
+</blockquote>
+
+<h1 id="which-is-better">Which is better?</h1>
+<p>When it comes with new technology and and fad of web development overall is flawed some promoting this and that but most of the recommendation found in some cases are not that great, explanation barely understood and just like this post it’s TLDR for some… This is a closer look to the concept, frameworks, and use cases for someone who stared learning with React.js and Node.js on January 2020 and after a year of learning, research, development and deployment here’s some useful insight.</p>
+
+<h2 id="server-side-rendering">Server Side Rendering</h2>
+<p>What is it? this is the traditional way of running things for websites, basically the server will provide readily available files like <a href="https://www.w3schools.com/html/default.asp">HTML</a> and <a href="https://www.w3schools.com/css/">CSS</a> and static files like images will be served and browser will render said files but is not interactive then browser downloads <a href="https://www.w3schools.com/js/">JavaScript</a> then browser executes it to make it interactive… this applies to most websites or landing pages mainly showing some information of a business or personal blogs with no real purpose or data… and in order to see changes on the site the website needs to be refreshed for a new request to be initiated.</p>
+<h4 id="dynamic-server-side-rendering">Dynamic Server Side Rendering</h4>
+<p>Web Applications or Web App are DSSR and it’s like SSR but with data, basically the client send request to the server server renders and respond with the static files but the difference is DSSR contains data from a database. Aside from static files this is stacked with <a href="https://www.php.net/">PHP</a> and databases like <a href="https://www.mysql.com/">MySQL</a> or <a href="https://www.mongodb.com/">mongoDB</a>.</p>
+
+<h2 id="client-side-rendering">Client Side Rendering</h2>
+<p>The concept of client side rendering is not new, but is mainly popularized with the use of front-end frameworks such as <a href="https://reactjs.org/">React.js</a> released on 2013 the concept of redefining web development and deviding it into 2 parts front-end developement for the overall face or aesthetic and back-end developement of functionality, this concept lessens the burden of developers so they can just specialised in one thing and not to worry about the next, this provides some innovation and breath of fresh air on designs. Development with client side rendering concept comes with a framework or library and if you have any background of javascript that would come in handy but React has it’s own syntax so checkout the <a href="https://reactjs.org/docs/getting-started.html">Docu</a>. I also wrote a post about <a href="https://adrianducao.github.io/coding/2020/10/02/Thoughts-on-React.js-copy.html">React.js</a></p>
+
+<h3 id="microservices">Microservices</h3>
+<p>Another concept that would come in mind if you devide the front-end to the back-end is microservices, what is microservices? from the name itself it is a way to distribute or spreading the work load of a web app, basically you can use a robust websever and high performance load balancer like <a href="https://www.nginx.com/">NGINX</a> and is mainly used as a reverse proxy. This way you could put mongoDB on a <a href="https://www.docker.com/">Docker</a> container and run as it is seperated from Node.js back-end server to provide API and is also seperated from front-end. Microservices also comes in handy for big Projects like serving hundreds and thousands or millions of users with the only bottleneck is the clients internet speed, good example is <a href="https://www.youtube.com/watch?v=CZ3wIuvmHeM">Netflix’s Microservices</a>. a thing to remember and take note is that overdoing things will comes with a price of undocumented shit, so bare in mind that there are some use cases of microservices especially for big projects that handles a lot of work load but if you only run a blog site with no forums or any services whatsover please don’t use this concept…</p>
+
+<h2 id="stacks-things-ive-used-before">Stacks: Things i’ve used before</h2>
+<p>what are the common stack that you see in SSR?</p>
+<ul>
+  <li>HTML</li>
+  <li>CSS/Bootstrap</li>
+  <li>JavaScript</li>
+  <li>and a Web server like <a href="https://www.apache.org/">Apache</a></li>
+  <li>MENN Stack(MongoDB Express <a href="https://nextjs.org/docs/getting-started">Next.js</a> Node.js)</li>
+</ul>
+
+<p>what about for DSSR?</p>
+<ul>
+  <li>same thing but with PHP and Databases like MySQL or PostgreSQL</li>
+  <li>and Servers like Apache, <a href="https://www.wampserver.com/en/">WAMPP</a>, <a href="https://www.apachefriends.org/index.html">XAMPP</a>, or <a href="https://laragon.org/">Laragon</a></li>
+  <li>MENN Stack or (MEAN Stack but i haven’t used this… A is <a href="https://angular.io/docs">Angular</a>)</li>
+</ul>
+
+<p>what about stacks for CSR?</p>
+<ul>
+  <li><a href="https://reactjs.org/">React.js</a> Framework</li>
+  <li><a href="https://nodejs.org/en/">Node.js</a> and will use <a href="https://expressjs.com/">Express.js</a> Framwork</li>
+  <li><a href="https://www.nginx.com/">NGINX</a> for the server and reverse proxy</li>
+  <li><a href="https://www.mongodb.com/">MongoDB</a>
+they usually call this MERN Stack (Mongo Express Reat Node) but you could also use MySQL or PostgreSQL on this so call it PERN Stack :-)</li>
+</ul>
+
+<p>with Microservices</p>
+<ul>
+  <li><a href="https://docs.docker.com/">Docker</a>
+i mainly use docker since i haven’t got the time to read the <a href="https://kubernetes.io/">Kubernetes</a> Documentation but they say that it’s much easier to pair docker with kubernetes since you can use kubernetes to manage docker containers afterwards</li>
+</ul>
+
+<h1 id="conclusion">Conclusion</h1>
+<p>So after using this client side rendering concepts and stacks for about a year, i found out that:</p>
+<h3 id="best-use-cases-for-ssr-and-dssr">best use cases for SSR and DSSR</h3>
+<ul>
+  <li>Landing page or websites that doesn’t require any data input and outputs</li>
+  <li>Blogs and Forums</li>
+  <li>Web Apps that requires good compatibility with SEO</li>
+  <li>Load Time</li>
+</ul>
+
+<h3 id="best-use-cases-for-csr">best use cases for CSR</h3>
+<ul>
+  <li>Web Apps that doesn’t care about SEO, good examples are web apps used on business end</li>
+  <li>Load Time (Client will have bad experience if slow internet connection is involved)</li>
+  <li>No full page reload, as the only thing that needs to load is the API’s data</li>
+</ul>
+
+<p>Happy Coding.</p>
+
+  </div><a class="u-url" href="/blog/2021/06/16/ServerSideRendering-vs.-ClientSideRendering.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Adrian Ducao</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Adrian Ducao</li><li><a class="u-email" href="mailto:adrianducao@rpointsolution.com">adrianducao@rpointsolution.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/AdrianDucao"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">AdrianDucao</span></a></li><li><a href="https://www.twitter.com/AdrianDucao"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AdrianDucao</span></a></li><li><a href="https://youtube.com/AMACTechtipsPhilippines"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#youtube"></use></svg> <span class="username">AMACTechtipsPhilippines</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>An Open Source Blog</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

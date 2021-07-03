@@ -1,0 +1,26 @@
+I"	<h1 id="stability-fedora-distro">Stability Fedora Distro</h1>
+<p>Fedora OS is one of many distribution of linux kernel by far this is the most stable OS i’ve used, in Ubuntu this typically breaks after 3-4 months of usage and updates, Pop_OS actually lasted 6-7 months before breaking, but Fedora lasted me almost 2 years before breaking on me still usable with cli but had to install a fresh copy of Fedora 34.</p>
+
+<h1 id="the-issue">The Issue</h1>
+<p>The issue that i encounter the most when in comes with linux distro is the kernel update there are times that things might truly break reason may vary, there’s alot of variable to consider such as hardware compatibility, broken dependency repositories, and other unknown sh*ts.</p>
+
+<p>After the update from Fedora 33 to Fedora 34 everything seems fine or issue, 2 months after the system upgrade i noticed a sluggish load time of my computer, my bootdrive is encrypted so whenever computer boots up you need to enter the passphrase, typical it will only take less than 5 seconds to load and you’ll be directed to login asking for password… but this time the load time after passphrase input took 1-3 minutes… a noticable difference… i worried that my M.2 SSD is dying but that’s not the issue since after a day or two boot stucked at</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>....
+[OK] starting GNOME display manager
+
+</code></pre></div></div>
+<p>then i know somethings up, pressed</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ctrl+Alt+F2
+</code></pre></div></div>
+<p>in order for me to access tty2 so i can at least access a terminal and voala! at last i was able to login on a terminal to check things up… tried to</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo dnf update
+</code></pre></div></div>
+<p>in fear that something broke last update and this might resolve said bootup issue… but it seemed that i’m not connected to the internet even though my Ethernet is plugged in on my machine…</p>
+
+<p>tried to</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ping google.com
+ping: google.com: Name or service not known
+</code></pre></div></div>
+
+<p>Happy Coding.</p>
+:ET

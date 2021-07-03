@@ -1,4 +1,147 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-06-10T19:55:20+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Adrian Ducao</title><subtitle>An Open Source Blog</subtitle><entry><title type="html">Port Scanning Tool: finding-PORTy</title><link href="http://localhost:4000/coding/2021/06/10/Port-scanning-tool.html" rel="alternate" type="text/html" title="Port Scanning Tool: finding-PORTy" /><published>2021-06-10T06:00:00+08:00</published><updated>2021-06-10T06:00:00+08:00</updated><id>http://localhost:4000/coding/2021/06/10/Port-scanning-tool</id><content type="html" xml:base="http://localhost:4000/coding/2021/06/10/Port-scanning-tool.html">&lt;h1 id=&quot;what-is-it&quot;&gt;What is it?&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-07-04T01:31:18+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Adrian Ducao</title><subtitle>An Open Source Blog</subtitle><entry><title type="html">Fedora: The myth of stable distribution</title><link href="http://localhost:4000/blog/2021/07/03/Fedora-the-myth-of-stable-distribution.html" rel="alternate" type="text/html" title="Fedora: The myth of stable distribution" /><published>2021-07-03T00:00:00+08:00</published><updated>2021-07-03T00:00:00+08:00</updated><id>http://localhost:4000/blog/2021/07/03/Fedora-the-myth-of-stable-distribution</id><content type="html" xml:base="http://localhost:4000/blog/2021/07/03/Fedora-the-myth-of-stable-distribution.html">&lt;h1 id=&quot;stability-fedora-distro&quot;&gt;Stability Fedora Distro&lt;/h1&gt;
+&lt;p&gt;Fedora OS is one of many distribution of linux kernel by far this is the most stable OS i’ve used, in Ubuntu this typically breaks after 3-4 months of usage and updates, Pop_OS actually lasted 6-7 months before breaking, but Fedora lasted me almost 2 years before breaking on me still usable with cli but had to install a fresh copy of Fedora 34.&lt;/p&gt;
+
+&lt;h1 id=&quot;issue-and-troubleshooting&quot;&gt;Issue and Troubleshooting&lt;/h1&gt;
+&lt;p&gt;The issue that i encounter the most when in comes with linux distro is the kernel update there are times that things might truly break reason may vary, there’s alot of variable to consider such as hardware compatibility, broken dependency repositories, and other unknown sh*ts.&lt;/p&gt;
+
+&lt;p&gt;After the update from Fedora 33 to Fedora 34 everything seems fine or issue, 2 months after the system upgrade i noticed a sluggish load time of my computer, my bootdrive is encrypted so whenever computer boots up you need to enter the passphrase, typical it will only take less than 5 seconds to load and you’ll be directed to login asking for password… but this time the load time after passphrase input took 1-3 minutes… a noticable difference… i worried that my M.2 SSD is dying but that’s not the issue since after a day or two boot stucked at&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;....
+[OK] starting GNOME display manager
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;then i know somethings up, pressed&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Ctrl+Alt+F2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;in order for me to access tty2 so i can at least access a terminal and voala! at last i was able to login on a terminal to check things up… tried to&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo dnf update
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;if something broke last update then this might resolve said issue and remove the potential broken dependencies and fix the bootup issue… but there’s an Error on downloading packages it seemed that i’m not connected to the internet even though my Ethernet is plugged in on my machine…&lt;/p&gt;
+
+&lt;p&gt;tried to&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ping google.com
+ping: google.com: Name or service not known
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;At first i tought that the motherboard might have some issue but then i remembered that i have my network manager set to automatically connect to my VPN when connecting to the internet not sure why my system can’t connect to my VPN server i tried to&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ nm-connection-editor
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;but it won’t pull up since there’s no GUI, took me a while to do research and realized that i can use nmcli…
+Checking ethernet adapters with&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ nmcli con
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;i was able to confirm that ethernet is not connected and had to&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ nmcli con add ethernet
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;to test if i was able to connect to the internet&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ping google.com
+PING google.com (142.250.66.142) 56(84) bytes of data.
+_
+--- google.com ping statistics ---
+5 packets transmitted, 0 received, 100% packet loss, time 4134ms
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;it seemed connected but with a 100% packet loss is useless… but tried to test it anyway by running an update&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo dnf update
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;the update went through and rebooted my machine… but still getting the same issue on boot and the load time is much worse since it’s taking at least 4-5 minutes…&lt;/p&gt;
+
+&lt;p&gt;Tried to check the update history to see if i can revert back some of the updates done&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo dnf history --reverse
+
+...showed the update and installation history...
+
+$ sudo dnf history undo &amp;lt;id&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;but after several tries and restarts things not getting better, still the same issue…&lt;/p&gt;
+
+&lt;p&gt;The only thing that i could think off is to revert or downgrade the current version of my distro to Fedora 33&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo dnf system-upgrade download  --releasever=33 --allowerasing --skip-broken
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;finalising the downgrade&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo dnf system-upgrade reboot
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;i encountered another issue stating that there’s a &lt;code class=&quot;highlighter-rouge&quot;&gt;missing shared file Libip4tc.so.2&lt;/code&gt;
+after much research and digging about this error found couple unanswered and unresolved queries in StackOverflow and some fedora forums i fanally decided to give up.&lt;/p&gt;
+
+&lt;h1 id=&quot;solution&quot;&gt;Solution&lt;/h1&gt;
+&lt;p&gt;Logged in to my cherrypi-server and created a bootable Fedora 34 flash drive out of the iso file downloaded from their website and installed a fresh Fedora 34 on my M.2 SSD boot drive… all files important data are archived to seperate 2TB HDD, 1 TB HDD, and Projects files are safe and sound on my 250GB SSD.&lt;/p&gt;
+
+&lt;h1 id=&quot;theory&quot;&gt;Theory&lt;/h1&gt;
+&lt;p&gt;after much discussion in a fedora forum they asked if i could boot to the other kernel saved up since whenver there’s an kernel update the older kernel are set aside and saved as a backup use incase the latest kernel had an issue, in total there are 3 different kernel versions on your bootdrive ready to be used but i did try to use 3 of those kernel version and still got the same issue at the end, Kernel Version are 5.13.xx, 5.12.xx, and 5.11.xx, i could have troubled to use download older kernel versions compile it and install but it would be much safer to install a fresh copy for security reasons, we concluded that there might be an update that broke the kernel version since Fedora 34 was just release back on April 2021, it is farely new and this point&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;If ain’t broke don’t fix it, if it breaks and can’t be fixed replace it.&lt;/p&gt;
+
+&lt;p&gt;Happy Coding.&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html">Stability Fedora Distro Fedora OS is one of many distribution of linux kernel by far this is the most stable OS i’ve used, in Ubuntu this typically breaks after 3-4 months of usage and updates, Pop_OS actually lasted 6-7 months before breaking, but Fedora lasted me almost 2 years before breaking on me still usable with cli but had to install a fresh copy of Fedora 34.</summary></entry><entry><title type="html">New Website as Porfolio</title><link href="http://localhost:4000/blog/2021/06/18/New-Website-as-portfolio.html" rel="alternate" type="text/html" title="New Website as Porfolio" /><published>2021-06-18T06:00:00+08:00</published><updated>2021-06-18T06:00:00+08:00</updated><id>http://localhost:4000/blog/2021/06/18/New-Website-as-portfolio</id><content type="html" xml:base="http://localhost:4000/blog/2021/06/18/New-Website-as-portfolio.html">&lt;h1 id=&quot;new-website-as-porfolio&quot;&gt;New Website as Porfolio&lt;/h1&gt;
+&lt;p&gt;will dev and deploy a new website &lt;a href=&quot;https://adrianducao.ph&quot;&gt;adrianducao.ph&lt;/a&gt; to showcase my projects and passion on web development and programming… basically a requirement too for some companies and client…&lt;/p&gt;
+
+&lt;p&gt;Happy Coding.&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html">New Website as Porfolio will dev and deploy a new website adrianducao.ph to showcase my projects and passion on web development and programming… basically a requirement too for some companies and client…</summary></entry><entry><title type="html">Server Side Rendering vs. Client Side Rendering</title><link href="http://localhost:4000/blog/2021/06/16/ServerSideRendering-vs.-ClientSideRendering.html" rel="alternate" type="text/html" title="Server Side Rendering vs. Client Side Rendering" /><published>2021-06-16T06:00:00+08:00</published><updated>2021-06-16T06:00:00+08:00</updated><id>http://localhost:4000/blog/2021/06/16/ServerSideRendering-vs.-ClientSideRendering</id><content type="html" xml:base="http://localhost:4000/blog/2021/06/16/ServerSideRendering-vs.-ClientSideRendering.html">&lt;blockquote&gt;
+  &lt;p&gt;Updated 06/17/2021&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;which-is-better&quot;&gt;Which is better?&lt;/h1&gt;
+&lt;p&gt;When it comes with new technology and and fad of web development overall is flawed some promoting this and that but most of the recommendation found in some cases are not that great, explanation barely understood and just like this post it’s TLDR for some… This is a closer look to the concept, frameworks, and use cases for someone who stared learning with React.js and Node.js on January 2020 and after a year of learning, research, development and deployment here’s some useful insight.&lt;/p&gt;
+
+&lt;h2 id=&quot;server-side-rendering&quot;&gt;Server Side Rendering&lt;/h2&gt;
+&lt;p&gt;What is it? this is the traditional way of running things for websites, basically the server will provide readily available files like &lt;a href=&quot;https://www.w3schools.com/html/default.asp&quot;&gt;HTML&lt;/a&gt; and &lt;a href=&quot;https://www.w3schools.com/css/&quot;&gt;CSS&lt;/a&gt; and static files like images will be served and browser will render said files but is not interactive then browser downloads &lt;a href=&quot;https://www.w3schools.com/js/&quot;&gt;JavaScript&lt;/a&gt; then browser executes it to make it interactive… this applies to most websites or landing pages mainly showing some information of a business or personal blogs with no real purpose or data… and in order to see changes on the site the website needs to be refreshed for a new request to be initiated.&lt;/p&gt;
+&lt;h4 id=&quot;dynamic-server-side-rendering&quot;&gt;Dynamic Server Side Rendering&lt;/h4&gt;
+&lt;p&gt;Web Applications or Web App are DSSR and it’s like SSR but with data, basically the client send request to the server server renders and respond with the static files but the difference is DSSR contains data from a database. Aside from static files this is stacked with &lt;a href=&quot;https://www.php.net/&quot;&gt;PHP&lt;/a&gt; and databases like &lt;a href=&quot;https://www.mysql.com/&quot;&gt;MySQL&lt;/a&gt; or &lt;a href=&quot;https://www.mongodb.com/&quot;&gt;mongoDB&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;client-side-rendering&quot;&gt;Client Side Rendering&lt;/h2&gt;
+&lt;p&gt;The concept of client side rendering is not new, but is mainly popularized with the use of front-end frameworks such as &lt;a href=&quot;https://reactjs.org/&quot;&gt;React.js&lt;/a&gt; released on 2013 the concept of redefining web development and deviding it into 2 parts front-end developement for the overall face or aesthetic and back-end developement of functionality, this concept lessens the burden of developers so they can just specialised in one thing and not to worry about the next, this provides some innovation and breath of fresh air on designs. Development with client side rendering concept comes with a framework or library and if you have any background of javascript that would come in handy but React has it’s own syntax so checkout the &lt;a href=&quot;https://reactjs.org/docs/getting-started.html&quot;&gt;Docu&lt;/a&gt;. I also wrote a post about &lt;a href=&quot;https://adrianducao.github.io/coding/2020/10/02/Thoughts-on-React.js-copy.html&quot;&gt;React.js&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;microservices&quot;&gt;Microservices&lt;/h3&gt;
+&lt;p&gt;Another concept that would come in mind if you devide the front-end to the back-end is microservices, what is microservices? from the name itself it is a way to distribute or spreading the work load of a web app, basically you can use a robust websever and high performance load balancer like &lt;a href=&quot;https://www.nginx.com/&quot;&gt;NGINX&lt;/a&gt; and is mainly used as a reverse proxy. This way you could put mongoDB on a &lt;a href=&quot;https://www.docker.com/&quot;&gt;Docker&lt;/a&gt; container and run as it is seperated from Node.js back-end server to provide API and is also seperated from front-end. Microservices also comes in handy for big Projects like serving hundreds and thousands or millions of users with the only bottleneck is the clients internet speed, good example is &lt;a href=&quot;https://www.youtube.com/watch?v=CZ3wIuvmHeM&quot;&gt;Netflix’s Microservices&lt;/a&gt;. a thing to remember and take note is that overdoing things will comes with a price of undocumented shit, so bare in mind that there are some use cases of microservices especially for big projects that handles a lot of work load but if you only run a blog site with no forums or any services whatsover please don’t use this concept…&lt;/p&gt;
+
+&lt;h2 id=&quot;stacks-things-ive-used-before&quot;&gt;Stacks: Things i’ve used before&lt;/h2&gt;
+&lt;p&gt;what are the common stack that you see in SSR?&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS/Bootstrap&lt;/li&gt;
+  &lt;li&gt;JavaScript&lt;/li&gt;
+  &lt;li&gt;and a Web server like &lt;a href=&quot;https://www.apache.org/&quot;&gt;Apache&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;MENN Stack(MongoDB Express &lt;a href=&quot;https://nextjs.org/docs/getting-started&quot;&gt;Next.js&lt;/a&gt; Node.js)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;what about for DSSR?&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;same thing but with PHP and Databases like MySQL or PostgreSQL&lt;/li&gt;
+  &lt;li&gt;and Servers like Apache, &lt;a href=&quot;https://www.wampserver.com/en/&quot;&gt;WAMPP&lt;/a&gt;, &lt;a href=&quot;https://www.apachefriends.org/index.html&quot;&gt;XAMPP&lt;/a&gt;, or &lt;a href=&quot;https://laragon.org/&quot;&gt;Laragon&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;MENN Stack or (MEAN Stack but i haven’t used this… A is &lt;a href=&quot;https://angular.io/docs&quot;&gt;Angular&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;what about stacks for CSR?&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://reactjs.org/&quot;&gt;React.js&lt;/a&gt; Framework&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node.js&lt;/a&gt; and will use &lt;a href=&quot;https://expressjs.com/&quot;&gt;Express.js&lt;/a&gt; Framwork&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.nginx.com/&quot;&gt;NGINX&lt;/a&gt; for the server and reverse proxy&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.mongodb.com/&quot;&gt;MongoDB&lt;/a&gt;
+they usually call this MERN Stack (Mongo Express Reat Node) but you could also use MySQL or PostgreSQL on this so call it PERN Stack :-)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;with Microservices&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.docker.com/&quot;&gt;Docker&lt;/a&gt;
+i mainly use docker since i haven’t got the time to read the &lt;a href=&quot;https://kubernetes.io/&quot;&gt;Kubernetes&lt;/a&gt; Documentation but they say that it’s much easier to pair docker with kubernetes since you can use kubernetes to manage docker containers afterwards&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;So after using this client side rendering concepts and stacks for about a year, i found out that:&lt;/p&gt;
+&lt;h3 id=&quot;best-use-cases-for-ssr-and-dssr&quot;&gt;best use cases for SSR and DSSR&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Landing page or websites that doesn’t require any data input and outputs&lt;/li&gt;
+  &lt;li&gt;Blogs and Forums&lt;/li&gt;
+  &lt;li&gt;Web Apps that requires good compatibility with SEO&lt;/li&gt;
+  &lt;li&gt;Load Time&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;best-use-cases-for-csr&quot;&gt;best use cases for CSR&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Web Apps that doesn’t care about SEO, good examples are web apps used on business end&lt;/li&gt;
+  &lt;li&gt;Load Time (Client will have bad experience if slow internet connection is involved)&lt;/li&gt;
+  &lt;li&gt;No full page reload, as the only thing that needs to load is the API’s data&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Happy Coding.&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html">Updated 06/17/2021</summary></entry><entry><title type="html">Port Scanning Tool: finding-PORTy</title><link href="http://localhost:4000/coding/2021/06/10/Port-scanning-tool.html" rel="alternate" type="text/html" title="Port Scanning Tool: finding-PORTy" /><published>2021-06-10T06:00:00+08:00</published><updated>2021-06-10T06:00:00+08:00</updated><id>http://localhost:4000/coding/2021/06/10/Port-scanning-tool</id><content type="html" xml:base="http://localhost:4000/coding/2021/06/10/Port-scanning-tool.html">&lt;h1 id=&quot;what-is-it&quot;&gt;What is it?&lt;/h1&gt;
 &lt;p&gt;finding-PORTy is a proof of concept fully functional port scanning tool designed to check open ports, check live host in a network, stealth scans, and keep activity data for later use. I wrote it on Python 3 so the codebase is supposed to be easily understandable and modified for further use.&lt;/p&gt;
 
 &lt;p&gt;here’s what it looks like&lt;/p&gt;

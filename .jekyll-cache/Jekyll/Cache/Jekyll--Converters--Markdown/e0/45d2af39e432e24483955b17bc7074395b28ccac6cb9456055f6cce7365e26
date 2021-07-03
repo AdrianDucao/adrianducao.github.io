@@ -1,0 +1,69 @@
+I"�<blockquote>
+  <p>Updated 06/17/2021</p>
+</blockquote>
+
+<h1 id="which-is-better">Which is better?</h1>
+<p>When it comes with new technology and and fad of web development overall is flawed some promoting this and that but most of the recommendation found in some cases are not that great, explanation barely understood and just like this post it’s TLDR for some… This is a closer look to the concept, frameworks, and use cases for someone who stared learning with React.js and Node.js on January 2020 and after a year of learning, research, development and deployment here’s some useful insight.</p>
+
+<h2 id="server-side-rendering">Server Side Rendering</h2>
+<p>What is it? this is the traditional way of running things for websites, basically the server will provide readily available files like <a href="https://www.w3schools.com/html/default.asp">HTML</a> and <a href="https://www.w3schools.com/css/">CSS</a> and static files like images will be served and browser will render said files but is not interactive then browser downloads <a href="https://www.w3schools.com/js/">JavaScript</a> then browser executes it to make it interactive… this applies to most websites or landing pages mainly showing some information of a business or personal blogs with no real purpose or data… and in order to see changes on the site the website needs to be refreshed for a new request to be initiated.</p>
+<h4 id="dynamic-server-side-rendering">Dynamic Server Side Rendering</h4>
+<p>Web Applications or Web App are DSSR and it’s like SSR but with data, basically the client send request to the server server renders and respond with the static files but the difference is DSSR contains data from a database. Aside from static files this is stacked with <a href="https://www.php.net/">PHP</a> and databases like <a href="https://www.mysql.com/">MySQL</a> or <a href="https://www.mongodb.com/">mongoDB</a>.</p>
+
+<h2 id="client-side-rendering">Client Side Rendering</h2>
+<p>The concept of client side rendering is not new, but is mainly popularized with the use of front-end frameworks such as <a href="https://reactjs.org/">React.js</a> released on 2013 the concept of redefining web development and deviding it into 2 parts front-end developement for the overall face or aesthetic and back-end developement of functionality, this concept lessens the burden of developers so they can just specialised in one thing and not to worry about the next, this provides some innovation and breath of fresh air on designs. Development with client side rendering concept comes with a framework or library and if you have any background of javascript that would come in handy but React has it’s own syntax so checkout the <a href="https://reactjs.org/docs/getting-started.html">Docu</a>. I also wrote a post about <a href="https://adrianducao.github.io/coding/2020/10/02/Thoughts-on-React.js-copy.html">React.js</a></p>
+
+<h3 id="microservices">Microservices</h3>
+<p>Another concept that would come in mind if you devide the front-end to the back-end is microservices, what is microservices? from the name itself it is a way to distribute or spreading the work load of a web app, basically you can use a robust websever and high performance load balancer like <a href="https://www.nginx.com/">NGINX</a> and is mainly used as a reverse proxy. This way you could put mongoDB on a <a href="https://www.docker.com/">Docker</a> container and run as it is seperated from Node.js back-end server to provide API and is also seperated from front-end. Microservices also comes in handy for big Projects like serving hundreds and thousands or millions of users with the only bottleneck is the clients internet speed, good example is <a href="https://www.youtube.com/watch?v=CZ3wIuvmHeM">Netflix’s Microservices</a>. a thing to remember and take note is that overdoing things will comes with a price of undocumented shit, so bare in mind that there are some use cases of microservices especially for big projects that handles a lot of work load but if you only run a blog site with no forums or any services whatsover please don’t use this concept…</p>
+
+<h2 id="stacks-things-ive-used-before">Stacks: Things i’ve used before</h2>
+<p>what are the common stack that you see in SSR?</p>
+<ul>
+  <li>HTML</li>
+  <li>CSS/Bootstrap</li>
+  <li>JavaScript</li>
+  <li>and a Web server like <a href="https://www.apache.org/">Apache</a></li>
+  <li>MENN Stack(MongoDB Express <a href="https://nextjs.org/docs/getting-started">Next.js</a> Node.js)</li>
+</ul>
+
+<p>what about for DSSR?</p>
+<ul>
+  <li>same thing but with PHP and Databases like MySQL or PostgreSQL</li>
+  <li>and Servers like Apache, <a href="https://www.wampserver.com/en/">WAMPP</a>, <a href="https://www.apachefriends.org/index.html">XAMPP</a>, or <a href="https://laragon.org/">Laragon</a></li>
+  <li>MENN Stack or (MEAN Stack but i haven’t used this… A is <a href="https://angular.io/docs">Angular</a>)</li>
+</ul>
+
+<p>what about stacks for CSR?</p>
+<ul>
+  <li><a href="https://reactjs.org/">React.js</a> Framework</li>
+  <li><a href="https://nodejs.org/en/">Node.js</a> and will use <a href="https://expressjs.com/">Express.js</a> Framwork</li>
+  <li><a href="https://www.nginx.com/">NGINX</a> for the server and reverse proxy</li>
+  <li><a href="https://www.mongodb.com/">MongoDB</a>
+they usually call this MERN Stack (Mongo Express Reat Node) but you could also use MySQL or PostgreSQL on this so call it PERN Stack :-)</li>
+</ul>
+
+<p>with Microservices</p>
+<ul>
+  <li><a href="https://docs.docker.com/">Docker</a>
+i mainly use docker since i haven’t got the time to read the <a href="https://kubernetes.io/">Kubernetes</a> Documentation but they say that it’s much easier to pair docker with kubernetes since you can use kubernetes to manage docker containers afterwards</li>
+</ul>
+
+<h1 id="conclusion">Conclusion</h1>
+<p>So after using this client side rendering concepts and stacks for about a year, i found out that:</p>
+<h3 id="best-use-cases-for-ssr-and-dssr">best use cases for SSR and DSSR</h3>
+<ul>
+  <li>Landing page or websites that doesn’t require any data input and outputs</li>
+  <li>Blogs and Forums</li>
+  <li>Web Apps that requires good compatibility with SEO</li>
+  <li>Load Time</li>
+</ul>
+
+<h3 id="best-use-cases-for-csr">best use cases for CSR</h3>
+<ul>
+  <li>Web Apps that doesn’t care about SEO, good examples are web apps used on business end</li>
+  <li>Load Time (Client will have bad experience if slow internet connection is involved)</li>
+  <li>No full page reload, as the only thing that needs to load is the API’s data</li>
+</ul>
+
+<p>Happy Coding.</p>
+:ET
