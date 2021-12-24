@@ -1,15 +1,15 @@
-I"�<h2 id="who-am-i">Who am I?</h2>
+I"u<h2 id="who-am-i">Who am I?</h2>
 <p>I’m an Undergrad of Bachelor of Science in Information Techonology, who loves to know how the world works and what makes the world tick. I enjoy learning stuff that for some seemed to be boring, i like theoretical talks but i really love getting my hands dirty since i’m a hands on kind of guy, currently working on a Corporate Job but my passion still lies on Programming, Web Development, Electronics, Mechatronics, and research on Biology.</p>
 
-<h2 id="current-update">Current update…</h2>
-<p>Below are the up to date things that i’m using or currently working on.</p>
+<h2 id="current-update">Current Update</h2>
+<p>Below are the up to date things that i’m using, currently working on.</p>
 
 <table>
   <thead>
     <tr>
-      <th>Language &amp; Frameworks</th>
-      <th>Projects</th>
-      <th>Other Hobbies</th>
+      <th>Current Languages &amp; Frameworks</th>
+      <th>Current Projects</th>
+      <th>Current Hobbies</th>
     </tr>
   </thead>
   <tbody>
@@ -27,6 +27,31 @@
       <td>Node.js</td>
       <td> </td>
       <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Future Planned Projects</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Setup Electronics Lab</td>
+    </tr>
+    <tr>
+      <td>Setup Server Room</td>
+    </tr>
+    <tr>
+      <td>Setup Biology Lab</td>
+    </tr>
+    <tr>
+      <td>Autonomous Robot Dog</td>
+    </tr>
+    <tr>
+      <td>Research and Study DIY Biohacking with especially on Molecular Engineering</td>
     </tr>
   </tbody>
 </table>
