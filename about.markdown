@@ -5,85 +5,17 @@ permalink: /about/
 ---
 
 ## Who am I?
-Hi, I'm Adrian Ducao aka Ian, I'm an undergrad BSIT who loves programming, learning and discovering things. I'm currently employed to a Corporate Job, I still accept freelance projects and jump from being a Freelance Programmer, Full Stack Web Developer, Web App Developer, and being a Consultant from time to time, depending on what kind of freelance projects that I receive. I do support Open Source Projects however due to signed NDA (Non-Disclosure Agreement) and toxic nature of Open Source, there are repositories set to Private to protect my clients source code and confidencial algorithm.
-
-## Current Work 
-* Business Owner at [RPOINT IT SOLUTIONS](https://rpointsolution.com)
-* Full time at EXL Service
-
-## Past Experience
-* Part time Ethical Hacker at Seccore1
-* Freelance Software Developer/Consultant at Philippine National Police, Intelligence Group, Counter Intelligence Division (PNP-IG CID), located at Camp BGenenal Rafael T Crame, Quezon City. [Certifcate Here](https://www.instagram.com/p/B0dNpdalTxw/)
-* Freelance Full Stack Developer at X3M Trading located at Neuva Vizcaya, Philippines
-* Code Consultant in College
-* Freelance Web Developer in High School and College
-
-## Languages I use and familiar with
->as of September 8, 2020
-
-#### Actively used
-* Python [Certificate](https://www.hackerrank.com/certificates/585f65ec6da2)
-* JavaScript
-* JSON
-* C
-* HTML/HTML5
-* CSS
-* Bash
-
-#### Rarely used
-* PHP
-* Java
-* SQL
-* Ruby 
-* C++
-* GDScript
-
-#### Familiar (needs to relearn)
-* C#
-* Assembly
-* Visual Basic 6
-
-## Framework, Library, and runtime I use
->as of September 8, 2020
-
-#### Actively used
-* Django
-* Node.js
-* React.js
-* Bootstrap
-
-#### Rarely used
-* Laravel 
-* Android Studio
-* ReactNative
-
-#### Relearning
-* ASP.net
+I'm an Undergrad of Bachelor of Science in Information Techonology, who loves to know how the world works and what makes the world tick. I enjoy learning stuff that for some seemed to be boring, i like theoretical talks but i really love getting my hands dirty since i'm a hands on kind of guy, currently working on a Corporate Job but my passion still lies on Programming, Web Development, Electronics, Mechatronics, and research on Biology.
 
 
-## Database I use
->as of September 8, 2020
+## Current update...
+Below are the up to date things that i'm using or currently working on.
 
-#### Actively used
-* MongoDB 
-
-#### Rarely used
-* MySQL
-* SQLite
-* custom DBMS written in C [database.c](https://github.com/AdrianDucao/C-Language/blob/master/database.c) *(rarely)*
-
-## Containerization 
->as of September 8, 2020
-
-* Docker *(some projects that requires it)*
-
-## Hosting and DNS
->as of September 8, 2020
-
-* [GoDaddy](https://ph.godaddy.com/)
-* [DigitalOcean](https://www.digitalocean.com/)
-* [AWS](https://aws.amazon.com)
-* my own server
+| Language & Frameworks | Projects             | Other Hobbies                 |
+| --------------------- | ---------------------| ----------------------------- | 
+| Python                | DIY Quadcopter Drone | Swing Trading in Stock Market |
+| C++                   |                      |                               |
+| Node.js               |                      |                               |
 
 You can find out more Ian's Open Source Project at [Github](https://github.com/AdrianDucao/) and My Business [RPOINT IT SOLUTIONS](https:rpointsolution.com) 
 
