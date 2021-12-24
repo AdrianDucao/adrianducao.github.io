@@ -5,11 +5,11 @@ date:   2021-11-25 6:00:00 +0800
 categories: blog
 ---
 
-# What's a Microcontrollers?
+# What is a Microcontroller?
 Microcontrollers are essentially a low powered embedded computer that is used to controller motors, sensors, and other devices for any electronics, mechantronics, robotics and industrial projects. You may already have encountered microcontrollers from your gadgets, appliances, printer at your office, and other IoT or automation devices. This consist of a processor, flash memory, and host of I/O.
 
 # Arduino?
-Arduino is a low powered 8-bit microcontroller, which is used for any beginner or advance projects. The typical Arduino flavor that you might have heard is the Arduino Uno.
+Arduino is a low powered 8-bit microcontroller, which is used for any beginner or advance projects. The typical Arduino flavor that you might have heard is the Arduino Uno but this is not the only option you have you can also use different microcontrollers like ESP32, Raspberry Pi Pico and so much more.
 
 ![Typical Arduino Uno Clone](/img/duino.png "Typical Arduino Uno Clone")
 
