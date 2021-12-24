@@ -1,4 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-07-04T04:52:50+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Adrian Ducao</title><subtitle>An Open Source Blog</subtitle><entry><title type="html">Fedora: The myth of stable distribution</title><link href="http://localhost:4000/blog/2021/07/03/Fedora-the-myth-of-stable-distribution.html" rel="alternate" type="text/html" title="Fedora: The myth of stable distribution" /><published>2021-07-03T00:00:00+08:00</published><updated>2021-07-03T00:00:00+08:00</updated><id>http://localhost:4000/blog/2021/07/03/Fedora-the-myth-of-stable-distribution</id><content type="html" xml:base="http://localhost:4000/blog/2021/07/03/Fedora-the-myth-of-stable-distribution.html">&lt;h1 id=&quot;stability-fedora-distro&quot;&gt;Stability Fedora Distro&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-24T18:26:57+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Adrian Ducao</title><subtitle>An Open Source Blog</subtitle><entry><title type="html">Introduction on Microcontrolers</title><link href="http://localhost:4000/blog/2021/11/25/Introduction-on-Microcontrollers.html" rel="alternate" type="text/html" title="Introduction on Microcontrolers" /><published>2021-11-25T06:00:00+08:00</published><updated>2021-11-25T06:00:00+08:00</updated><id>http://localhost:4000/blog/2021/11/25/Introduction-on-Microcontrollers</id><content type="html" xml:base="http://localhost:4000/blog/2021/11/25/Introduction-on-Microcontrollers.html">&lt;h1 id=&quot;whats-a-microcontrollers&quot;&gt;What’s a Microcontrollers?&lt;/h1&gt;
+&lt;p&gt;Microcontrollers are essentially a low powered embedded computer that is used to controller motors, sensors, and other devices for any electronics, mechantronics, robotics and industrial projects. You may already have encountered microcontrollers from your gadgets, appliances, printer at your office, and other IoT or automation devices. This consist of a processor, flash memory, and host of I/O.&lt;/p&gt;
+
+&lt;h1 id=&quot;arduino&quot;&gt;Arduino?&lt;/h1&gt;
+&lt;p&gt;Arduino is a low powered 8-bit microcontroller, which is used for any beginner or advance projects. The typical Arduino flavor that you might have heard is the Arduino Uno.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/duino.png&quot; alt=&quot;Typical Arduino Uno Clone&quot; title=&quot;Typical Arduino Uno Clone&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;modules&quot;&gt;Modules&lt;/h1&gt;
+&lt;p&gt;These are devices/components that allows you to have a ready use I/O i.e. motors and sensors devices, it can be use to controll, gather data, store data, or produce data. Modules are oftenly interchanged with the term sensors.&lt;/p&gt;
+
+&lt;h1 id=&quot;sensors&quot;&gt;Sensors&lt;/h1&gt;
+&lt;p&gt;These are components used to collect data either environmental, digital or analog.&lt;/p&gt;
+
+&lt;h1 id=&quot;arduino-ide-syntax&quot;&gt;Arduino IDE Syntax&lt;/h1&gt;
+&lt;p&gt;Programming with arduino is easy, if you have a background or experience using C language or C++ you can practically use the Arduino IDE to control modules and collect data from it, the Arduino IDE. You can use library written in C++ to make it easier and save time instead of you manually controlling and LCD screen or sensor you can just use the readily available opensourced libraries, with opensourced libraries on thoudsand of sensors and modules this greatly impacts the availability to learn microcontrollers for beginners.&lt;/p&gt;
+
+&lt;h1 id=&quot;syntax-basics&quot;&gt;Syntax Basics&lt;/h1&gt;
+&lt;p&gt;Typically upon opening the IDE you’ll see;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;void setup(){
+
+}
+
+void loop(){
+
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;these are functions are set upon creating a new file, &lt;code class=&quot;highlighter-rouge&quot;&gt;setup()&lt;/code&gt; function allows you to setup the serial baud rate, the pinouts for your sensors or modules, while the &lt;code class=&quot;highlighter-rouge&quot;&gt;loop()&lt;/code&gt; allows you to set a code that contstantly being repeated e.g. refreshing an LCD screen every 1 second.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/ss.png&quot; alt=&quot;Typical Arduino Uno Clone&quot; title=&quot;Typical Arduino Uno Clone&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;resources&quot;&gt;Resources&lt;/h1&gt;
+&lt;p&gt;You can Learn more about the syntax and its functions from &lt;a href=&quot;https://www.arduino.cc/reference/en/&quot;&gt;Arduino IDE’s documentation&lt;/a&gt;.
+Familiarizing basic electronics like resistance, capacitance is helpful when doing mechatronics projects.&lt;/p&gt;
+
+&lt;p&gt;Happy Coding.&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html">What’s a Microcontrollers? Microcontrollers are essentially a low powered embedded computer that is used to controller motors, sensors, and other devices for any electronics, mechantronics, robotics and industrial projects. You may already have encountered microcontrollers from your gadgets, appliances, printer at your office, and other IoT or automation devices. This consist of a processor, flash memory, and host of I/O.</summary></entry><entry><title type="html">Fedora: The myth of stable distribution</title><link href="http://localhost:4000/blog/2021/07/03/Fedora-the-myth-of-stable-distribution.html" rel="alternate" type="text/html" title="Fedora: The myth of stable distribution" /><published>2021-07-03T00:00:00+08:00</published><updated>2021-07-03T00:00:00+08:00</updated><id>http://localhost:4000/blog/2021/07/03/Fedora-the-myth-of-stable-distribution</id><content type="html" xml:base="http://localhost:4000/blog/2021/07/03/Fedora-the-myth-of-stable-distribution.html">&lt;h1 id=&quot;stability-fedora-distro&quot;&gt;Stability Fedora Distro&lt;/h1&gt;
 &lt;p&gt;Fedora OS is one of many distribution of linux kernel by far this is the most stable OS i’ve used, in Ubuntu this typically breaks after 3-4 months of usage and updates, Pop_OS actually lasted 6-7 months before breaking, but Fedora lasted me almost 2 years before breaking on me, the reason why fedora is stable is due to the huge support of developers who maintain the kernel and is backed by redhat which you’ll get a steady updates is providing bleeding edge technology and since Fedora has one of the largest community most if not all issues has been addressed, reported, or experienced everysingle kind of breaks to be able to provide solutions, and since Fedora is following the spirit of software freedom and open source philosophy which makes them actively refuse to include proprietary programs and would rather prefer open sourced software instead.&lt;/p&gt;
 
 &lt;h1 id=&quot;issue-and-troubleshooting&quot;&gt;Issue and Troubleshooting&lt;/h1&gt;
@@ -462,18 +497,4 @@ $ python3 crypt.py --action decrypt --keyfile /path/keyfile
   &lt;p&gt;June 01, 2020&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;This is the day i’ve decided with my best of friends to register a business for our new venture, &lt;a href=&quot;https://rpointsolution.com&quot;&gt;RPOINT IT SOLUTIONS&lt;/a&gt;, since it’s the height of pandemic we can only do and move so much so there’s that we’ll have to work it out until the end of 2021.&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html">Pandemic SHTF</summary></entry><entry><title type="html">Welcome to adrianducao.github.io</title><link href="http://localhost:4000/jekyll/update/2020/04/06/welcome-to-adrianducao.github.io.html" rel="alternate" type="text/html" title="Welcome to adrianducao.github.io" /><published>2020-04-06T12:47:36+08:00</published><updated>2020-04-06T12:47:36+08:00</updated><id>http://localhost:4000/jekyll/update/2020/04/06/welcome-to-adrianducao.github.io</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/04/06/welcome-to-adrianducao.github.io.html">&lt;p&gt;This static website will mainly show my daily or weekly blog post about Programming, Web App Development, Security and other stuff while learning things.&lt;/p&gt;
-
-&lt;!-- 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Tom&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &apos;Hi, Tom&apos; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
- --&gt;
-
-&lt;!-- Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/ --&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">This static website will mainly show my daily or weekly blog post about Programming, Web App Development, Security and other stuff while learning things.</summary></entry></feed>
+&lt;p&gt;This is the day i’ve decided with my best of friends to register a business for our new venture, &lt;a href=&quot;https://rpointsolution.com&quot;&gt;RPOINT IT SOLUTIONS&lt;/a&gt;, since it’s the height of pandemic we can only do and move so much so there’s that we’ll have to work it out until the end of 2021.&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html">Pandemic SHTF</summary></entry></feed>

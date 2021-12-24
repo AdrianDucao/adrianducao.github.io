@@ -1,0 +1,43 @@
+I"�
+<h1 id="whats-a-microcontrollers">What’s a Microcontrollers?</h1>
+<p>Microcontrollers are essentially a low powered embedded computer that is used to controller motors, sensors, and other devices for any electronics, mechantronics, robotics and industrial projects. You may already have encountered microcontrollers from your gadgets, appliances, printer at your office, and other IoT or automation devices. This consist of a processor, flash memory, and host of I/O.</p>
+
+<h1 id="arduino">Arduino?</h1>
+<p>Arduino is a low powered 8-bit microcontroller, which is used for any beginner or advance projects. The typical Arduino flavor that you might have heard is the Arduino Uno.
+sample image here:<img src="/img/duino.png" alt="Typical Arduino Uno Clone" title="Typical Arduino Uno Clone" /></p>
+
+<h1 id="modules">Modules</h1>
+<p>These are devices/components that allows you to have a ready use I/O i.e. motors and sensors devices, it can be use to controll, gather data, store data, or produce data. Modules are oftenly interchanged with the term sensors.</p>
+
+<h1 id="sensors">Sensors</h1>
+<p>These are components used to collect data either environmental, digital or analog.</p>
+
+<h1 id="arduino-ide-syntax">Arduino IDE Syntax</h1>
+<p>Programming with arduino is easy, if you have a background or experience using C language or C++ you can practically use the Arduino IDE to control modules and collect data from it, the Arduino IDE. You can use library written in C++ to make it easier and save time instead of you manually controlling and LCD screen or sensor you can just use the readily available opensourced libraries, with opensourced libraries on thoudsand of sensors and modules this greatly impacts the availability to learn microcontrollers for beginners.</p>
+
+<h1 id="syntax-basics">Syntax Basics</h1>
+<p>Typically upon opening the IDE you’ll see;</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void setup(){
+
+}
+
+void loop(){
+
+}
+</code></pre></div></div>
+<p>these are functions are set upon creating a new file, <code class="highlighter-rouge">setup()</code> function allows you to setup the serial baud rate, the pinouts for your sensors or modules, while the <code class="highlighter-rouge">loop()</code> allows you to set a code that contstantly being repeated e.g. refreshing an LCD screen every 1 second.</p>
+
+<p><a href="/img/ss.png" title="Typical Arduino Uno Clone">Typical Arduino Uno Clone</a></p>
+
+<h1 id="resources">Resources</h1>
+<p>You can Learn more about the syntax and its functions from <a href="https://www.arduino.cc/reference/en/">Arduino IDE’s documentation</a></p>
+
+<!-- # Data Logging
+
+```
+sample here
+```
+sample image here:![alt text for screen readers](/img/sample.jpg "Text to show on mouseover") -->
+
+<p>Happy Coding.</p>
+:ET
