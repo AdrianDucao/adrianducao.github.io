@@ -14,8 +14,8 @@ Below are the up to date things that i'm using, currently working on.
 | Languages and Frameworks in use | Current Projects             | Current Hobbies                 |
 | ------------------------------ | -----------------------------| ------------------------------- | 
 | Python                         | DIY Quadcopter Drone         | Swing Trading in Stock Market   |
-| C++                            |                              |                                 |
-| Node.js                        |                              |                                 |
+| C++                            |                              | Electronics                                |
+| Node.js                        |                              | Biology Research                                |
 
 |Future Planned Projects                 |
 |--------------------------------|
