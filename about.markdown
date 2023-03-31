@@ -13,17 +13,17 @@ Below are the up to date things that i'm using, currently working on.
 
 | Languages and Frameworks in use | Current Projects             | Current Hobbies                 |
 | ------------------------------ | -----------------------------| ------------------------------- | 
-| Python                         | DIY Quadcopter Drone         | Swing Trading in Stock Market   |
-| C++                            |                              | Electronics                                |
-| Node.js                        |                              | Biology Research                                |
+|                        |          |    |
+|                            |                              |                               |
+|                         |                              |                                |
 
 |Future Planned Projects                 |
 |--------------------------------|
-|Setup Electronics Lab|
-|Setup Server Room|
-|Setup Biology Lab|
-|Autonomous Robot Dog Build|
-|Research and Study DIY Biohacking with especially on Molecular Engineering|
+|Setup Electronics Lab(Halted)|
+|Setup Server Room(Halted)|
+|Setup Biology Lab(Halted)|
+|Autonomous Robot Dog Build(Halted)|
+|Research and Study DIY Biohacking with especially on Molecular Engineering(Halted)|
 
 You can find out more on my Open Source Projects at [Github](https://github.com/AdrianDucao/) and My Business [RPOINT IT SOLUTIONS](https:rpointsolution.com) 
 
