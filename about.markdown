@@ -13,9 +13,9 @@ Below are the up to date things that i'm using, currently working on.
 
 | Languages and Frameworks in use | Current Projects             | Current Hobbies                 |
 | ------------------------------ | -----------------------------| ------------------------------- | 
-|                        |          |    |
-|                            |                              |                               |
-|                         |                              |                                |
+|                                |                              |                                 |
+|                                |                              |                                 |
+|                                |                              |                                |
 
 |Future Planned Projects                 |
 |--------------------------------|
